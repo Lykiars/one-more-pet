@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+{%- if page.title and page.layout == "post" %}
+<title>{{ page.title | escape }} · {{ site.title }}</title>
+{%- else %}
+<title>{{ site.title }}</title>
+{%- endif %}
+{%- assign aciklama = page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 %}
+<meta name="description" content="{{ aciklama | escape }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+<meta property="og:description" content="{{ aciklama | escape }}">
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tilt+Warp&family=Figtree:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="{{ '/' | relative_url }}">One More <span>Pet</span></a>
+      <nav class="nav" aria-label="Bölümler">
+        <a href="{{ '/' | relative_url }}#oyun">Oyun</a>
+        <a href="{{ '/' | relative_url }}#kediler">Kediler</a>
+        <a href="{{ '/' | relative_url }}#devlog">Devlog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+{{ content }}
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>One More Pet · Tek oyunculu, çevrimdışı PC oyunu</span>
+      <span>Geliştirme sürüyor; bilgiler değişebilir.</span>
+    </div>
+  </footer>
+{%- if page.demo %}
+  <script src="{{ '/assets/demo.js' | relative_url }}"></script>
+{%- endif %}
+</body>
+</html>

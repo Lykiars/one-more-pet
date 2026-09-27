@@ -1,0 +1,12 @@
+title: One More Pet
+description: Kediyi sev, işaretlerini oku ve “bir kez daha” demenin bedelini pati yemeden önce hesapla.
+lang: tr
+# Site https://jenkins-pendragon.github.io/one-more-pet/ adresinde yayınlanır.
+# Repo adı değişirse baseurl'ü "/<repo-adı>" yap.
+url: "https://jenkins-pendragon.github.io"
+baseurl: "/one-more-pet"
+permalink: /devlog/:year/:month/:day/:title/
+markdown: kramdown
+timezone: Europe/Istanbul
+exclude:
+  - README.md

@@ -1,0 +1,153 @@
+---
+layout: default
+demo: true
+---
+    <section class="hero" id="oyun">
+      <div class="wrap">
+        <div>
+          <span class="status">Ön üretim · Prototip</span>
+          <h1>One More <em>Pet</em></h1>
+          <p class="pitch">Kediyi sev, işaretlerini oku ve “bir kez daha” demenin bedelini pati yemeden önce hesapla.</p>
+          <p class="hero-sub">Küçük, sıcak bir odada beş kedi var. Onları çağırıyor, kucağında seviyor ve sınırlarını öğreniyorsun. Her okşama puan getirir ama kedinin sabrı sonsuz değil.</p>
+        </div>
+
+        <div class="petbox" id="petbox" aria-labelledby="pet-title">
+          <div class="petbox-head">
+            <h2 id="pet-title">Bir dene</h2>
+            <span class="label">Sağ tık: puanı al</span>
+          </div>
+          <div class="cat-stage">
+            <svg class="cat-face" id="cat-face" viewBox="0 0 110 100" aria-hidden="true">
+              <path class="ear ear-l" id="ear-l" d="M20 44 L28 8 L50 30 Z" fill="var(--ink)"></path>
+              <path class="ear ear-r" id="ear-r" d="M60 30 L82 8 L90 44 Z" fill="var(--ink)"></path>
+              <ellipse cx="55" cy="58" rx="40" ry="34" fill="var(--ink)"></ellipse>
+              <ellipse id="eye-l" cx="40" cy="56" rx="5" ry="6" fill="var(--amber)"></ellipse>
+              <ellipse id="eye-r" cx="70" cy="56" rx="5" ry="6" fill="var(--amber)"></ellipse>
+              <path d="M51 70 L59 70 L55 75 Z" fill="var(--coral)"></path>
+            </svg>
+            <div>
+              <div class="mood" id="mood">Rahat</div>
+              <div class="mood-note" id="mood-note">Mırlıyor. Basılı tut ve sev.</div>
+            </div>
+          </div>
+          <div>
+            <div class="meter" role="meter" aria-label="Rahatsızlık" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="meter"><div class="meter-fill" id="meter-fill"></div></div>
+            <div class="meter-ticks"><span>0</span><span>40</span><span>65</span><span>85</span><span>100</span></div>
+          </div>
+          <div class="stats">
+            <div class="stat"><span class="label">Seans</span><b id="s-score">0</b></div>
+            <div class="stat"><span class="label">Seri</span><b id="s-combo">x1.0</b></div>
+            <div class="stat"><span class="label">Mırlama</span><b id="s-bank">0</b></div>
+          </div>
+          <div class="controls">
+            <button class="btn btn-pet" id="btn-pet" type="button" aria-pressed="false">Basılı tut ve sev</button>
+            <button class="btn btn-bank" id="btn-bank" type="button">Puanı al</button>
+          </div>
+          <div class="toast" id="toast" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <div class="block-head">
+          <span class="label">Nasıl oynanır</span>
+          <h2>Otur, çağır, sev, zamanında bırak</h2>
+          <p>One More Pet birinci şahıs bir “şansını zorla” oyunu. Bir kediyi sevdikçe puan toplarsın; kedi rahatsız olmaya başladığında durup puanı almak ya da bir okşama daha denemek senin kararın.</p>
+        </div>
+        <div class="facts">
+          <div class="fact"><span class="label">Görünüm</span><b>Birinci şahıs</b></div>
+          <div class="fact"><span class="label">Mekân</span><b>Tek sıcak oda</b></div>
+          <div class="fact"><span class="label">Kediler</span><b>5 farklı karakter</b></div>
+          <div class="fact"><span class="label">Seans</span><b>30–90 saniye</b></div>
+          <div class="fact"><span class="label">Motor</span><b>Unity 6</b></div>
+          <div class="fact"><span class="label">Hedef platform</span><b>Windows · Steam</b></div>
+        </div>
+        <ol class="steps">
+          <li><b>Otur</b><span>Sandalyeye, koltuğa ya da yatağa geç.</span></li>
+          <li><b>Çağır</b><span>Kediye bak ve dizine vur. Gelip gelmemesi sana ne kadar güvendiğine bağlı.</span></li>
+          <li><b>Sev</b><span>Doğru yeri doğru hızda sev. Her bölge sevdikçe ısınır, başka bölgeye geçince soğur.</span></li>
+          <li><b>Bırak</b><span>Sağ tıkla puanı al. Geç kalırsan pati yersin ve seans puanının çoğu gider.</span></li>
+        </ol>
+        <div class="heatscale">
+          <span class="label">Kedinin dili: rahatsızlık ölçeği</span>
+          <div class="heatbar" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="heatlegend">
+            <div><b>Rahat</b><span>0–39 · mırlama, göz kısma</span></div>
+            <div><b>Doyuyor</b><span>40–64 · kuyruk ucu oynar</span></div>
+            <div><b>Rahatsız</b><span>65–84 · kulaklar geride</span></div>
+            <div><b>Son uyarı</b><span>85–99 · tıslama</span></div>
+            <div><b>Pati</b><span>100 · saldırı</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="kediler">
+      <div class="wrap">
+        <div class="block-head">
+          <span class="label">Kediler</span>
+          <h2>Beş kedi, beş ayrı sınır</h2>
+          <p>Hepsi aynı elle sevilir ama hiçbiri aynı şeyi sevmez. Hangi bölgeyi, hangi hızı sevdiklerini deneyerek çözersin.</p>
+        </div>
+        <div class="cats">
+          <article class="cat">
+            <div class="cat-top"><span class="mono-mark" aria-hidden="true">M</span><div><h3>Misket</h3><span class="role">İlk dostun</span></div></div>
+            <p>Başını, çenesini ve sırtını sever. Hatalara en sabırlı kedi; oyunu onunla öğrenirsin.</p>
+            <div class="pips" aria-label="Zorluk 1 / 5"><i class="on"></i><i></i><i></i><i></i><i></i><span>zorluk</span></div>
+          </article>
+          <article class="cat">
+            <div class="cat-top"><span class="mono-mark" aria-hidden="true">P</span><div><h3>Prenses</h3><span class="role">Koltuğun sahibi</span></div></div>
+            <p>Yalnız başına ve çenesine dokunulmasına izin verir. Yavaş ve dikkatli el ister.</p>
+            <div class="pips" aria-label="Zorluk 2 / 5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i><span>zorluk</span></div>
+          </article>
+          <article class="cat">
+            <div class="cat-top"><span class="mono-mark" aria-hidden="true">L</span><div><h3>Lokum</h3><span class="role">Karnını bile sevdirir</span></div></div>
+            <p>Sevdiği çok yer var ama çabuk ısınır. Bölge değiştirmeyi bilen kazanır.</p>
+            <div class="pips" aria-label="Zorluk 3 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><span>zorluk</span></div>
+          </article>
+          <article class="cat">
+            <div class="cat-top"><span class="mono-mark" aria-hidden="true">Z</span><div><h3>Zıpır</h3><span class="role">Enerji topu</span></div></div>
+            <p>Sırtını ve kuyruğunu sever. Hızlı ve kararlı bir el ister; yavaş kalırsan sıkılır.</p>
+            <div class="pips" aria-label="Zorluk 4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><span>zorluk</span></div>
+          </article>
+          <article class="cat boss">
+            <div class="cat-top"><span class="mono-mark" aria-hidden="true">G</span><div><h3>Gölge</h3><span class="role">Masanın altından izler</span></div></div>
+            <p>En zor güvenilen kedi. Çok yavaş ve çok dikkatli sevilmek ister; güveni en son gelir.</p>
+            <div class="pips" aria-label="Zorluk 5 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><span>zorluk</span></div>
+          </article>
+        </div>
+        <div class="bond">
+          <div><span>0–33</span><b>Yeni</b><p>Seni tanımıyor, çağrına çoğu zaman gelmez.</p></div>
+          <div><span>34–66</span><b>Tanıdık</b><p>Daha rahat sevilir, daha geç rahatsız olur.</p></div>
+          <div><span>67–99</span><b>Dost</b><p>Çağrına güvenle gelir. Pati yersen küser.</p></div>
+          <div><span>100 + sır</span><b>En İyi Dost</b><p>Her kedinin gizli bir sevdiği şey var. Bulan, bağı kurar.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="devlog">
+      <div class="wrap">
+        <div class="devlog-head">
+          <div class="block-head">
+            <span class="label">Devlog</span>
+            <h2>Geliştirme günlüğü</h2>
+            <p>Oyunun nasıl şekillendiğini buradan takip edebilirsin.</p>
+          </div>
+        </div>
+        {%- if site.posts.size == 0 %}
+        <p class="empty">Henüz devlog yok. İlk yazı yakında.</p>
+        {%- else %}
+        <div class="posts">
+          {%- for post in site.posts %}
+          <article class="post">
+            <div class="post-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{% include tarih.html date=post.date %}</time></div>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+            <div class="post-body">{{ post.excerpt }}</div>
+            <a class="more" href="{{ post.url | relative_url }}">Devamını oku →</a>
+          </article>
+          {%- endfor %}
+        </div>
+        {%- endif %}
+      </div>
+    </section>

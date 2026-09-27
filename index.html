@@ -5,212 +5,232 @@ demo: true
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <defs>
     <symbol id="cat" viewBox="0 0 120 110">
-      <path d="M16 56 L20 6 L54 32 Z" style="fill:var(--fur);stroke:#2a1e3b;stroke-width:4;stroke-linejoin:round"></path>
-      <path d="M66 32 L100 6 L104 56 Z" style="fill:var(--fur);stroke:#2a1e3b;stroke-width:4;stroke-linejoin:round"></path>
+      <path d="M16 56 L20 6 L54 32 Z" style="fill:var(--fur);stroke:#2b2150;stroke-width:4;stroke-linejoin:round"></path>
+      <path d="M66 32 L100 6 L104 56 Z" style="fill:var(--fur);stroke:#2b2150;stroke-width:4;stroke-linejoin:round"></path>
       <path d="M25 42 L27 20 L42 33 Z" style="fill:var(--ear)"></path>
       <path d="M78 33 L93 20 L95 42 Z" style="fill:var(--ear)"></path>
-      <ellipse cx="60" cy="64" rx="47" ry="40" style="fill:var(--fur);stroke:#2a1e3b;stroke-width:4"></ellipse>
+      <ellipse cx="60" cy="64" rx="47" ry="40" style="fill:var(--fur);stroke:#2b2150;stroke-width:4"></ellipse>
       <path d="M60 25 C44 26 30 36 26 50 C38 52 50 46 60 36 Z" style="fill:var(--patch)"></path>
-      <ellipse cx="42" cy="62" rx="8" ry="10" style="fill:var(--eye);stroke:#2a1e3b;stroke-width:3"></ellipse>
-      <ellipse cx="78" cy="62" rx="8" ry="10" style="fill:var(--eye);stroke:#2a1e3b;stroke-width:3"></ellipse>
-      <ellipse cx="42" cy="63" rx="3" ry="6" style="fill:#2a1e3b"></ellipse>
-      <ellipse cx="78" cy="63" rx="3" ry="6" style="fill:#2a1e3b"></ellipse>
+      <ellipse cx="42" cy="62" rx="8" ry="10" style="fill:var(--eye);stroke:#2b2150;stroke-width:3"></ellipse>
+      <ellipse cx="78" cy="62" rx="8" ry="10" style="fill:var(--eye);stroke:#2b2150;stroke-width:3"></ellipse>
+      <ellipse cx="42" cy="63" rx="3" ry="6" style="fill:#2b2150"></ellipse>
+      <ellipse cx="78" cy="63" rx="3" ry="6" style="fill:#2b2150"></ellipse>
       <circle cx="44" cy="58" r="2.2" style="fill:#ffffff"></circle>
       <circle cx="80" cy="58" r="2.2" style="fill:#ffffff"></circle>
-      <ellipse cx="30" cy="80" rx="8" ry="4.5" style="fill:#f59ab9;opacity:0.75"></ellipse>
-      <ellipse cx="90" cy="80" rx="8" ry="4.5" style="fill:#f59ab9;opacity:0.75"></ellipse>
-      <path d="M54 76 L66 76 L60 83 Z" style="fill:#f07a9a;stroke:#2a1e3b;stroke-width:2.5;stroke-linejoin:round"></path>
-      <path d="M60 83 Q56 90 50 87 M60 83 Q64 90 70 87" style="fill:none;stroke:#2a1e3b;stroke-width:3;stroke-linecap:round"></path>
-    </symbol>
-    <symbol id="paw" viewBox="0 0 32 32">
-      <ellipse cx="16" cy="21" rx="8" ry="7" style="fill:currentColor"></ellipse>
-      <ellipse cx="7" cy="13" rx="3.4" ry="4.2" style="fill:currentColor"></ellipse>
-      <ellipse cx="13" cy="8" rx="3.4" ry="4.2" style="fill:currentColor"></ellipse>
-      <ellipse cx="19.5" cy="8" rx="3.4" ry="4.2" style="fill:currentColor"></ellipse>
-      <ellipse cx="25.5" cy="13" rx="3.4" ry="4.2" style="fill:currentColor"></ellipse>
-    </symbol>
-    <symbol id="heart" viewBox="0 0 32 32">
-      <path d="M16 28 C6 20 2 15 2 10 C2 5.5 5.5 3 9 3 C12 3 14.5 5 16 8 C17.5 5 20 3 23 3 C26.5 3 30 5.5 30 10 C30 15 26 20 16 28 Z" style="fill:currentColor"></path>
+      <ellipse cx="30" cy="80" rx="8" ry="4.5" style="fill:#f59ab9;opacity:0.7"></ellipse>
+      <ellipse cx="90" cy="80" rx="8" ry="4.5" style="fill:#f59ab9;opacity:0.7"></ellipse>
+      <path d="M54 76 L66 76 L60 83 Z" style="fill:#f07a9a;stroke:#2b2150;stroke-width:2.5;stroke-linejoin:round"></path>
+      <path d="M60 83 Q56 90 50 87 M60 83 Q64 90 70 87" style="fill:none;stroke:#2b2150;stroke-width:3;stroke-linecap:round"></path>
     </symbol>
   </defs>
 </svg>
 
     <section class="hero" id="oyun">
-      <div class="deco" aria-hidden="true">
-        <svg class="d1" style="color:#ffffff"><use href="#paw"></use></svg>
-        <svg class="d2" style="color:#e0689f"><use href="#heart"></use></svg>
-        <svg class="d3" style="color:#f7e64a"><use href="#heart"></use></svg>
-        <svg class="d4" style="color:#7b68d0"><use href="#paw"></use></svg>
-        <svg class="d5" style="color:#ffffff"><use href="#heart"></use></svg>
-      </div>
       <div class="wrap hero-grid">
         <div>
-          <span class="badge">Ön üretim · Prototip</span>
-          <h1 class="logo"><span>One More</span> <span class="logo-pet">Pet!</span></h1>
+          <span class="status">ön üretim · prototip</span>
+          <h1 class="logo">One More <em>Pet</em></h1>
           <p class="pitch">Kediyi sev, işaretlerini oku ve “bir kez daha” demenin bedelini pati yemeden önce hesapla.</p>
-          <p class="hero-sub">Küçük, sıcak bir odada beş kedi var. Onları çağırıyor, kucağında seviyor ve sınırlarını öğreniyorsun. Her okşama puan getirir ama kedinin sabrı sonsuz değil.</p>
+          <p class="hero-sub">Akşam, küçük ve sıcak bir oda, beş kedi. Onları çağırıyor, kucağında seviyor ve sınırlarını öğreniyorsun. Her okşama puan getirir ama kedinin sabrı sonsuz değil.</p>
           <div class="cta-row">
-            <a class="btn-cta" href="#devlog">Devlog'u oku</a>
-            <a class="btn-ghost" href="#nasil">Nasıl oynanır?</a>
+            <a class="btn" href="#devlog">Devlog'u oku</a>
+            <a class="btn btn-quiet" href="#seans">Bir seans nasıl geçer?</a>
           </div>
-          <p class="platform">Hedef: Windows · Steam</p>
+          <p class="platform">hedef: Windows · Steam</p>
         </div>
 
-        <div class="petbox sticker" id="petbox" aria-labelledby="pet-title">
-          <div class="petbox-head">
-            <h2 id="pet-title">Bir dene!</h2>
-            <span class="hint">Sağ tık = puanı al</span>
-          </div>
-          <div class="cat-stage">
-            <svg class="cat-face" viewBox="0 0 120 110" aria-hidden="true">
+        <div class="stage" id="petbox" aria-label="Sevme denemesi">
+          <div class="pool">
+            <div class="rug" aria-hidden="true"></div>
+            <div class="motes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+            <svg class="pet-cat" id="pet-cat" viewBox="0 0 300 236" role="img" aria-label="Sevilmeyi bekleyen turuncu kedi. Üzerine basılı tutarak sevebilirsin.">
+              <g class="tail">
+                <path d="M226 186 C268 184 288 156 278 126 C272 108 254 106 252 122" style="fill:none;stroke:#2b2150;stroke-width:24;stroke-linecap:round"></path>
+                <path d="M226 186 C268 184 288 156 278 126 C272 108 254 106 252 122" style="fill:none;stroke:#f5a860;stroke-width:14;stroke-linecap:round"></path>
+              </g>
+              <ellipse cx="150" cy="176" rx="94" ry="54" style="fill:#f5a860;stroke:#2b2150;stroke-width:5"></ellipse>
+              <path d="M96 160 Q104 150 114 158 M196 158 Q204 150 212 160 M140 206 Q150 198 160 206" style="fill:none;stroke:#e0843a;stroke-width:6;stroke-linecap:round"></path>
+              <ellipse cx="118" cy="222" rx="20" ry="11" style="fill:#fbd2a6;stroke:#2b2150;stroke-width:4"></ellipse>
+              <ellipse cx="182" cy="222" rx="20" ry="11" style="fill:#fbd2a6;stroke:#2b2150;stroke-width:4"></ellipse>
               <g class="ear ear-l" id="ear-l">
-                <path d="M16 56 L20 6 L54 32 Z" style="fill:#f5a860;stroke:#2a1e3b;stroke-width:4;stroke-linejoin:round"></path>
-                <path d="M25 42 L27 20 L42 33 Z" style="fill:#f7b8cc"></path>
+                <path d="M90 90 L94 32 L136 64 Z" style="fill:#f5a860;stroke:#2b2150;stroke-width:5;stroke-linejoin:round"></path>
+                <path d="M101 78 L103 48 L124 64 Z" style="fill:#f7b8cc"></path>
               </g>
               <g class="ear ear-r" id="ear-r">
-                <path d="M66 32 L100 6 L104 56 Z" style="fill:#f5a860;stroke:#2a1e3b;stroke-width:4;stroke-linejoin:round"></path>
-                <path d="M78 33 L93 20 L95 42 Z" style="fill:#f7b8cc"></path>
+                <path d="M164 64 L206 32 L210 90 Z" style="fill:#f5a860;stroke:#2b2150;stroke-width:5;stroke-linejoin:round"></path>
+                <path d="M176 64 L197 48 L199 78 Z" style="fill:#f7b8cc"></path>
               </g>
-              <ellipse cx="60" cy="64" rx="47" ry="40" style="fill:#f5a860;stroke:#2a1e3b;stroke-width:4"></ellipse>
-              <path d="M60 25 C44 26 30 36 26 50 C38 52 50 46 60 36 Z" style="fill:#e07f2e"></path>
-              <ellipse id="eye-l" cx="42" cy="62" rx="4" ry="6" style="fill:#2a1e3b"></ellipse>
-              <ellipse id="eye-r" cx="78" cy="62" rx="4" ry="6" style="fill:#2a1e3b"></ellipse>
-              <ellipse cx="30" cy="80" rx="8" ry="4.5" style="fill:#f59ab9;opacity:0.75"></ellipse>
-              <ellipse cx="90" cy="80" rx="8" ry="4.5" style="fill:#f59ab9;opacity:0.75"></ellipse>
-              <path d="M54 76 L66 76 L60 83 Z" style="fill:#f07a9a;stroke:#2a1e3b;stroke-width:2.5;stroke-linejoin:round"></path>
-              <path d="M60 83 Q56 90 50 87 M60 83 Q64 90 70 87" style="fill:none;stroke:#2a1e3b;stroke-width:3;stroke-linecap:round"></path>
+              <ellipse cx="150" cy="114" rx="72" ry="60" style="fill:#f5a860;stroke:#2b2150;stroke-width:5"></ellipse>
+              <path d="M150 56 C130 58 108 70 100 88 C118 92 138 82 150 68 Z" style="fill:#e0843a"></path>
+              <ellipse id="eye-l" cx="124" cy="114" rx="6" ry="9" style="fill:#2b2150"></ellipse>
+              <ellipse id="eye-r" cx="176" cy="114" rx="6" ry="9" style="fill:#2b2150"></ellipse>
+              <ellipse cx="104" cy="136" rx="11" ry="6" style="fill:#f59ab9;opacity:0.75"></ellipse>
+              <ellipse cx="196" cy="136" rx="11" ry="6" style="fill:#f59ab9;opacity:0.75"></ellipse>
+              <path d="M142 128 L158 128 L150 137 Z" style="fill:#f07a9a;stroke:#2b2150;stroke-width:3;stroke-linejoin:round"></path>
+              <path d="M150 137 Q144 146 135 142 M150 137 Q156 146 165 142" style="fill:none;stroke:#2b2150;stroke-width:3.5;stroke-linecap:round"></path>
+              <path d="M84 126 L112 130 M84 140 L112 138 M216 126 L188 130 M216 140 L188 138" style="fill:none;stroke:#2b2150;stroke-width:2.5;stroke-linecap:round;opacity:0.6"></path>
             </svg>
-            <div>
+          </div>
+          <div class="hud">
+            <div class="hud-top">
               <div class="mood" id="mood">Rahat</div>
-              <div class="mood-note" id="mood-note">Mırlıyor. Basılı tut ve sev.</div>
+              <div class="mood-note" id="mood-note">Mırlıyor. Kedinin üstüne basılı tut ve sev.</div>
             </div>
-          </div>
-          <div>
             <div class="meter" role="meter" aria-label="Rahatsızlık" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="meter"><div class="meter-fill" id="meter-fill"></div></div>
-            <div class="meter-ticks"><span>0</span><span>40</span><span>65</span><span>85</span><span>100</span></div>
-          </div>
-          <div class="stats">
-            <div class="stat"><span class="label">Seans</span><b id="s-score">0</b></div>
-            <div class="stat"><span class="label">Seri</span><b id="s-combo">x1.0</b></div>
-            <div class="stat"><span class="label">Mırlama</span><b id="s-bank">0</b></div>
-          </div>
-          <div class="controls">
-            <button class="btn btn-pet" id="btn-pet" type="button" aria-pressed="false">Basılı tut ve sev</button>
-            <button class="btn btn-bank" id="btn-bank" type="button">Puanı al</button>
-          </div>
-          <div class="toast" id="toast" role="status" aria-live="polite"></div>
-        </div>
-      </div>
-      <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0,35 C180,70 360,70 540,35 C720,0 900,0 1080,35 C1260,70 1350,60 1440,40 L1440,70 L0,70 Z" style="fill:#7b68d0"></path></svg>
-    </section>
-
-    <section class="band band-purple" id="nasil">
-      <div class="wrap">
-        <h2 class="band-title">Nasıl oynanır</h2>
-        <p class="band-sub">Otur, çağır, sev ve tam zamanında bırak. Gerisi kedinin keyfine kalmış.</p>
-        <div class="chips">
-          <span class="chip">Görünüm: <b>Birinci şahıs</b></span>
-          <span class="chip">Mekân: <b>Tek sıcak oda</b></span>
-          <span class="chip">Kediler: <b>5</b></span>
-          <span class="chip">Seans: <b>30–90 sn</b></span>
-          <span class="chip">Motor: <b>Unity 6</b></span>
-        </div>
-        <ol class="steps">
-          <li class="sticker"><b>Otur</b><span>Sandalyeye, koltuğa ya da yatağa geç.</span></li>
-          <li class="sticker"><b>Çağır</b><span>Kediye bak ve dizine vur. Gelip gelmemesi sana ne kadar güvendiğine bağlı.</span></li>
-          <li class="sticker"><b>Sev</b><span>Doğru yeri doğru hızda sev. Her bölge sevdikçe ısınır, başka bölgeye geçince soğur.</span></li>
-          <li class="sticker"><b>Bırak</b><span>Sağ tıkla puanı al. Geç kalırsan pati yersin ve seans puanının çoğu gider.</span></li>
-        </ol>
-      </div>
-    </section>
-    <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true" style="background:#7b68d0"><path d="M0,40 C240,0 480,0 720,35 C960,70 1200,70 1440,30 L1440,70 L0,70 Z" style="fill:#1f6fd1"></path></svg>
-
-    <section class="band band-blue" id="dil">
-      <div class="wrap">
-        <h2 class="band-title">Kedinin dili</h2>
-        <p class="band-sub">Bar yok, sayaç yok. Kuyruğa, kulaklara ve mırlamaya bak.</p>
-        <div class="heat sticker">
-          <div class="heatbar" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
-          <div class="heatlegend">
-            <div style="--dot:#5ed3b5"><b>Rahat</b><span class="num">0–39</span><span>Mırlama, göz kısma</span></div>
-            <div style="--dot:#b6db4f"><b>Doyuyor</b><span class="num">40–64</span><span>Kuyruk ucu oynar</span></div>
-            <div style="--dot:#f7c236"><b>Rahatsız</b><span class="num">65–84</span><span>Kulaklar geride</span></div>
-            <div style="--dot:#f28c38"><b>Son uyarı</b><span class="num">85–99</span><span>Tıslama</span></div>
-            <div style="--dot:#ef4b4b"><b>Pati!</b><span class="num">100</span><span>Saldırı, puanın çoğu gider</span></div>
+            <div class="stats">
+              <span>seans<b id="s-score">0</b></span>
+              <span>seri<b id="s-combo">x1.0</b></span>
+              <span>mırlama<b id="s-bank">0</b></span>
+            </div>
+            <div class="controls">
+              <button class="btn btn-pet" id="btn-pet" type="button" aria-pressed="false">Basılı tut ve sev</button>
+              <button class="btn btn-quiet" id="btn-bank" type="button">Puanı al (sağ tık)</button>
+            </div>
+            <div class="toast" id="toast" role="status" aria-live="polite"></div>
           </div>
         </div>
       </div>
     </section>
-    <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true" style="background:#1f6fd1"><path d="M0,30 C200,70 420,70 640,40 C880,5 1160,10 1440,45 L1440,70 L0,70 Z" style="fill:#f28c38"></path></svg>
 
-    <section class="band band-orange" id="kediler">
+    <section class="session" id="seans">
       <div class="wrap">
-        <h2 class="band-title">Kediler</h2>
-        <p class="band-sub">Beş kedi, beş ayrı sınır. Hangisi neyi sever, deneyerek çözeceksin.</p>
-        <div class="cats">
-          <article class="cat sticker">
-            <svg class="face" style="--fur:#f5a860;--patch:#e07f2e;--ear:#f7b8cc;--eye:#8fd16f" aria-hidden="true"><use href="#cat"></use></svg>
-            <h3>Misket</h3>
-            <span class="role">İlk dostun</span>
-            <p>Başını, çenesini ve sırtını sever. Hatalara en sabırlı kedi.</p>
-            <div class="paws" aria-label="Zorluk 1 / 5" style="color:#2a1e3b"><svg><use href="#paw"></use></svg><svg class="off"><use href="#paw"></use></svg><svg class="off"><use href="#paw"></use></svg><svg class="off"><use href="#paw"></use></svg><svg class="off"><use href="#paw"></use></svg></div>
+        <div class="section-head">
+          <span class="eyebrow">bir seans · 30–90 saniye</span>
+          <h2>Isınan bir kedi, <span class="glow-word">tek bir karar</span></h2>
+          <p>Otur, dizine vurup kediyi çağır, sev. Kedi ısındıkça puan ve seri büyür. Asıl soru hep aynı: şimdi bırakmak mı, bir kez daha mı?</p>
+        </div>
+        <div class="chart-box">
+          <svg class="chart" viewBox="0 0 800 300" role="img" aria-label="Bir sevme seansında rahatsızlığın zamana göre değişimi: çağırma, sevme, bölge değiştirince kısa düşüş, 88'de puanı alma; devam edilirse 100'de pati.">
+            <rect class="band-0" x="60" y="174" width="720" height="86"></rect>
+            <rect class="band-1" x="60" y="119" width="720" height="55"></rect>
+            <rect class="band-2" x="60" y="75" width="720" height="44"></rect>
+            <rect class="band-3" x="60" y="42" width="720" height="33"></rect>
+            <rect class="band-4" x="60" y="38" width="720" height="4"></rect>
+            <line class="axis" x1="60" y1="260" x2="780" y2="260"></line>
+            <line class="axis" x1="60" y1="36" x2="60" y2="260"></line>
+            <text class="tick" x="50" y="264" text-anchor="end">0</text>
+            <text class="tick" x="50" y="176" text-anchor="end">40</text>
+            <text class="tick" x="50" y="121" text-anchor="end">65</text>
+            <text class="tick" x="50" y="77" text-anchor="end">85</text>
+            <text class="tick" x="50" y="44" text-anchor="end">100</text>
+            <text class="tick" x="60" y="282" text-anchor="middle">0 sn</text>
+            <text class="tick" x="260" y="282" text-anchor="middle">10</text>
+            <text class="tick" x="460" y="282" text-anchor="middle">20</text>
+            <text class="tick" x="660" y="282" text-anchor="middle">30</text>
+            <path class="curve" d="M60 260 L120 249 C150 244 170 240 180 238 C230 200 270 170 300 161 C315 158 325 170 340 172 C390 150 430 118 460 106 C495 92 520 76 540 66"></path>
+            <path class="risk" d="M540 66 C570 56 600 46 620 40 L640 40"></path>
+            <circle class="dot" cx="120" cy="249" r="8"></circle>
+            <text class="note" x="120" y="228" text-anchor="middle">Çağır</text>
+            <text class="note-soft" x="120" y="212" text-anchor="middle">dizine vur</text>
+            <circle class="dot" cx="300" cy="161" r="8"></circle>
+            <text class="note" x="286" y="140" text-anchor="end">Sev</text>
+            <text class="note-soft" x="286" y="124" text-anchor="end">seri büyür</text>
+            <circle class="dot" cx="340" cy="172" r="8"></circle>
+            <text class="note" x="350" y="200">Bölge değiştir</text>
+            <text class="note-soft" x="350" y="216">eski bölge soğur</text>
+            <circle class="dot dot-lamp" cx="540" cy="66" r="10"></circle>
+            <text class="note" x="526" y="100" text-anchor="end">Bırak: Tam Zamanında</text>
+            <text class="note-soft" x="526" y="116" text-anchor="end">70–99 arasında çıkarsan +%15</text>
+            <circle class="dot-hot" cx="640" cy="40" r="10"></circle>
+            <text class="note-hot" x="656" y="45">Pati!</text>
+            <text class="note-soft" x="656" y="62">seans puanının %75'i gider</text>
+            <text class="note-soft" x="590" y="30" text-anchor="middle">bir kez daha…</text>
+          </svg>
+        </div>
+        <div class="legend">
+          <span style="--c:#7fd9b8"><i></i>Rahat · mırlar</span>
+          <span style="--c:#d9e57a"><i></i>Doyuyor · kuyruk ucu</span>
+          <span style="--c:#ffc857"><i></i>Rahatsız · kulaklar geride</span>
+          <span style="--c:#ff9b6a"><i></i>Son uyarı · tıslama</span>
+          <span style="--c:#f25c7a"><i></i>Pati</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="cats-sec" id="kediler">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">beş kedi · beş ayrı sınır</span>
+          <h2>Her kedinin <span class="glow-word">kendi ısısı</span> var</h2>
+          <p>Hepsi aynı elle sevilir ama hiçbiri aynı şeyi sevmez. Hangi bölgeyi, hangi hızı sevdiklerini deneyerek çözersin.</p>
+        </div>
+        <div class="cat-list">
+          <article class="cat-row" style="--c:#7fd9b8">
+            <svg class="face" style="--fur:#f5a860;--patch:#e0843a;--ear:#f7b8cc;--eye:#8fd16f" aria-hidden="true"><use href="#cat"></use></svg>
+            <div><h3>Misket</h3><span class="role">ilk dostun</span><p>Başını, çenesini ve sırtını sever. Hatalara en sabırlı kedi; oyunu onunla öğrenirsin.</p></div>
+            <div class="traits">
+              <div class="trait"><span>Sabır</span><span class="dots" aria-label="5 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+              <div class="trait"><span>El hızı</span><span class="val">orta · geniş aralık</span></div>
+            </div>
           </article>
-          <article class="cat sticker">
+          <article class="cat-row" style="--c:#d9e57a">
             <svg class="face" style="--fur:#fff6ee;--patch:#fff6ee;--ear:#f7b2c8;--eye:#7cc3ee" aria-hidden="true"><use href="#cat"></use></svg>
-            <h3>Prenses</h3>
-            <span class="role">Koltuğun sahibi</span>
-            <p>Yalnız başına ve çenesine dokundurur. Yavaş ve dikkatli el ister.</p>
-            <div class="paws" aria-label="Zorluk 2 / 5" style="color:#2a1e3b"><svg><use href="#paw"></use></svg><svg><use href="#paw"></use></svg><svg class="off"><use href="#paw"></use></svg><svg class="off"><use href="#paw"></use></svg><svg class="off"><use href="#paw"></use></svg></div>
+            <div><h3>Prenses</h3><span class="role">koltuğun sahibi</span><p>Yalnız başına ve çenesine dokundurur. Acele eden eli hemen fark eder.</p></div>
+            <div class="traits">
+              <div class="trait"><span>Sabır</span><span class="dots" aria-label="3 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></div>
+              <div class="trait"><span>El hızı</span><span class="val">yavaş · dar aralık</span></div>
+            </div>
           </article>
-          <article class="cat sticker">
+          <article class="cat-row" style="--c:#ffc857">
             <svg class="face" style="--fur:#fff1dc;--patch:#d98b4b;--ear:#f7b8cc;--eye:#f2c14e" aria-hidden="true"><use href="#cat"></use></svg>
-            <h3>Lokum</h3>
-            <span class="role">Karnını bile sevdirir</span>
-            <p>Sevdiği çok yer var ama çabuk ısınır. Bölge değiştirmeyi bilen kazanır.</p>
-            <div class="paws" aria-label="Zorluk 3 / 5" style="color:#2a1e3b"><svg><use href="#paw"></use></svg><svg><use href="#paw"></use></svg><svg><use href="#paw"></use></svg><svg class="off"><use href="#paw"></use></svg><svg class="off"><use href="#paw"></use></svg></div>
+            <div><h3>Lokum</h3><span class="role">karnını bile sevdirir</span><p>Sevdiği çok yer var ama çabuk ısınır. Bölge değiştirmeyi bilen kazanır.</p></div>
+            <div class="traits">
+              <div class="trait"><span>Sabır</span><span class="dots" aria-label="1 / 5"><i class="on"></i><i></i><i></i><i></i><i></i></span></div>
+              <div class="trait"><span>El hızı</span><span class="val">orta · geniş aralık</span></div>
+            </div>
           </article>
-          <article class="cat sticker">
+          <article class="cat-row" style="--c:#ff9b6a">
             <svg class="face" style="--fur:#aab6c4;--patch:#7f8b9b;--ear:#f7b8cc;--eye:#f7e64a" aria-hidden="true"><use href="#cat"></use></svg>
-            <h3>Zıpır</h3>
-            <span class="role">Enerji topu</span>
-            <p>Sırtını ve kuyruğunu sever. Hızlı ve kararlı bir el ister.</p>
-            <div class="paws" aria-label="Zorluk 4 / 5" style="color:#2a1e3b"><svg><use href="#paw"></use></svg><svg><use href="#paw"></use></svg><svg><use href="#paw"></use></svg><svg><use href="#paw"></use></svg><svg class="off"><use href="#paw"></use></svg></div>
+            <div><h3>Zıpır</h3><span class="role">enerji topu</span><p>Sırtını ve kuyruğunu sever. Hızlı ve kararlı bir el ister; yavaş kalırsan sıkılır.</p></div>
+            <div class="traits">
+              <div class="trait"><span>Sabır</span><span class="dots" aria-label="3 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></div>
+              <div class="trait"><span>El hızı</span><span class="val">hızlı · dar aralık</span></div>
+            </div>
           </article>
-          <article class="cat sticker">
+          <article class="cat-row" style="--c:#f25c7a">
             <svg class="face" style="--fur:#3a3046;--patch:#3a3046;--ear:#6a5a7e;--eye:#f7e64a" aria-hidden="true"><use href="#cat"></use></svg>
-            <h3>Gölge</h3>
-            <span class="role">Masanın altından izler</span>
-            <p>En zor güvenilen kedi. Güveni en son gelir, ama gelir.</p>
-            <div class="paws" aria-label="Zorluk 5 / 5" style="color:#2a1e3b"><svg><use href="#paw"></use></svg><svg><use href="#paw"></use></svg><svg><use href="#paw"></use></svg><svg><use href="#paw"></use></svg><svg><use href="#paw"></use></svg></div>
+            <div><h3>Gölge</h3><span class="role">masanın altından izler</span><p>En zor güvenilen kedi. Çok yavaş sevilmek ister; güveni en son gelir, ama gelir.</p></div>
+            <div class="traits">
+              <div class="trait"><span>Sabır</span><span class="dots" aria-label="1 / 5"><i class="on"></i><i></i><i></i><i></i><i></i></span></div>
+              <div class="trait"><span>El hızı</span><span class="val">çok yavaş · dar aralık</span></div>
+            </div>
           </article>
         </div>
-        <div class="bond sticker">
-          <div><span class="num">0–33</span><b>Yeni</b><p>Seni tanımıyor, çağrına çoğu zaman gelmez.</p></div>
-          <div><span class="num">34–66</span><b>Tanıdık</b><p>Daha rahat sevilir, daha geç rahatsız olur.</p></div>
-          <div><span class="num">67–99</span><b>Dost</b><p>Çağrına güvenle gelir. Pati yersen küser.</p></div>
-          <div><span class="num">100 + sır</span><b>En İyi Dost</b><p>Her kedinin gizli bir sevdiği şey var. Bulan, bağı kurar.</p></div>
+        <p class="cat-key">Kartların rengi, oyundaki rahatsızlık ölçeğinden geliyor: nane en rahat kedi, gül kırmızısı en zoru.</p>
+
+        <div class="bond">
+          <h3>Sevgi 0'dan 100'e</h3>
+          <div class="bond-track">
+            <div style="--c:#8f7fd0"><i></i><b>Yeni</b><span>0–33</span><p>Çağrına çoğu zaman gelmez.</p></div>
+            <div style="--c:#b3a4ee"><i></i><b>Tanıdık</b><span>34–66</span><p>Daha geç rahatsız olur.</p></div>
+            <div style="--c:#d9cffb"><i></i><b>Dost</b><span>67–99</span><p>Güvenle gelir. Pati yersen küser.</p></div>
+            <div style="--c:#ffc98b"><i></i><b>En İyi Dost</b><span>100 + sır</span><p>Gizli sevdiği şeyi bul.</p></div>
+          </div>
         </div>
       </div>
     </section>
-    <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true" style="background:#f28c38"><path d="M0,45 C260,5 520,5 760,38 C1000,70 1220,66 1440,32 L1440,70 L0,70 Z" style="fill:#f4a3cf"></path></svg>
 
-    <section class="band band-pink" id="devlog">
+    <section class="devlog" id="devlog">
       <div class="wrap">
-        <h2 class="band-title">Devlog</h2>
-        <p class="band-sub">Oyunun nasıl şekillendiğini buradan takip et.</p>
+        <div class="section-head">
+          <span class="eyebrow">geliştirme günlüğü</span>
+          <h2>Devlog</h2>
+          <p>Oyunun nasıl şekillendiğini buradan takip edebilirsin.</p>
+        </div>
         {%- if site.posts.size == 0 %}
         <p class="empty">Henüz devlog yok. İlk yazı yakında.</p>
         {%- else %}
-        <div class="posts">
+        <ol class="log">
           {%- for post in site.posts %}
-          <article class="post sticker">
-            <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{% include tarih.html date=post.date %}</time>
-            <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
-            <div class="post-body">{{ post.excerpt }}</div>
-            <a class="btn-cta" href="{{ post.url | relative_url }}">Devamını oku</a>
-          </article>
+          <li>
+            <a href="{{ post.url | relative_url }}">
+              <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{% include tarih.html date=post.date %}</time>
+              <div><h3>{{ post.title | escape }}</h3><div class="excerpt">{{ post.excerpt }}</div></div>
+              <span class="go" aria-hidden="true">→</span>
+            </a>
+          </li>
           {%- endfor %}
-        </div>
+        </ol>
         {%- endif %}
       </div>
     </section>

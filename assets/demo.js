@@ -48,6 +48,7 @@
     els.fill.style.width = h + "%";
     els.fill.style.backgroundSize = (h > 0 ? 10000 / h : 100) + "% 100%";
     els.meter.setAttribute("aria-valuenow", String(h));
+    box.style.setProperty("--heat", String(h));
     els.score.textContent = String(S.score);
     els.combo.textContent = "x" + S.combo.toFixed(1);
     els.bank.textContent = String(S.bank);
@@ -129,6 +130,13 @@
   petBtn.addEventListener("keydown", function (e) { if ((e.key === " " || e.key === "Enter") && !e.repeat) { e.preventDefault(); startPet(); } });
   petBtn.addEventListener("keyup", function (e) { if (e.key === " " || e.key === "Enter") { e.preventDefault(); stopPet(); } });
   petBtn.addEventListener("click", function (e) { e.preventDefault(); });
+  var cat = document.getElementById("pet-cat");
+  if (cat) {
+    cat.addEventListener("pointerdown", function (e) { if (e.button === 0) { e.preventDefault(); try { cat.setPointerCapture(e.pointerId); } catch (x) {} startPet(); } });
+    cat.addEventListener("pointerup", stopPet);
+    cat.addEventListener("pointercancel", stopPet);
+    cat.addEventListener("lostpointercapture", stopPet);
+  }
   bankBtn.addEventListener("click", bankScore);
   box.addEventListener("contextmenu", function (e) { e.preventDefault(); bankScore(); });
   draw();

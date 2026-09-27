@@ -3,13 +3,11 @@ layout: default
 ---
 <article class="article">
   <div class="wrap">
-    <div class="article-card sticker">
-      <a class="back" href="{{ '/' | relative_url }}#devlog">← Tüm devloglar</a>
-      <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{% include tarih.html date=page.date %}</time>
-      <h1>{{ page.title | escape }}</h1>
-      <div class="prose">
+    <a class="back" href="{{ '/' | relative_url }}#devlog">← Tüm devloglar</a>
+    <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{% include tarih.html date=page.date %}</time>
+    <h1>{{ page.title | escape }}</h1>
+    <div class="prose">
 {{ content }}
-      </div>
     </div>
   </div>
 </article>

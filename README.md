@@ -1,6 +1,6 @@
 # One More Pet — tanıtım ve devlog sitesi
 
-GitHub Pages ile yayınlanan statik site (Jekyll). Adres: https://jenkins-pendragon.github.io/one-more-pet/
+GitHub Pages ile yayınlanan statik site (Jekyll). Adres: https://lykiars.github.io/one-more-pet/
 
 ## Yeni devlog ekleme
 

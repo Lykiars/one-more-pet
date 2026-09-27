@@ -31,16 +31,17 @@ demo: true
           <span class="status">ön üretim · prototip</span>
           <h1 class="logo">One More <em>Pet</em></h1>
           <p class="pitch">Kediyi sev, işaretlerini oku ve “bir kez daha” demenin bedelini pati yemeden önce hesapla.</p>
-          <p class="hero-sub">Akşam, küçük ve sıcak bir oda, beş kedi. Onları çağırıyor, kucağında seviyor ve sınırlarını öğreniyorsun. Her okşama puan getirir ama kedinin sabrı sonsuz değil.</p>
+          <p class="hero-sub">Küçük, sıcak bir oda ve beş kedi. Onları çağırıyor, kucağında seviyor ve sınırlarını öğreniyorsun. Her okşama puan getirir ama kedinin sabrı sonsuz değil.</p>
           <div class="cta-row">
             <a class="btn" href="#devlog">Devlog'u oku</a>
-            <a class="btn btn-quiet" href="#seans">Bir seans nasıl geçer?</a>
+            <a class="btn btn-soft" href="#seans">Bir seans nasıl geçer?</a>
           </div>
           <p class="platform">hedef: Windows · Steam</p>
         </div>
 
         <div class="stage" id="petbox" aria-label="Sevme denemesi">
           <div class="pool">
+            <i class="shape s1" aria-hidden="true"></i><i class="shape s2" aria-hidden="true"></i><i class="shape s3" aria-hidden="true"></i><i class="shape s4" aria-hidden="true"></i>
             <div class="rug" aria-hidden="true"></div>
             <div class="motes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
             <svg class="pet-cat" id="pet-cat" viewBox="0 0 300 236" role="img" aria-label="Sevilmeyi bekleyen turuncu kedi. Üzerine basılı tutarak sevebilirsin.">
@@ -84,7 +85,7 @@ demo: true
             </div>
             <div class="controls">
               <button class="btn btn-pet" id="btn-pet" type="button" aria-pressed="false">Basılı tut ve sev</button>
-              <button class="btn btn-quiet" id="btn-bank" type="button">Puanı al (sağ tık)</button>
+              <button class="btn btn-soft" id="btn-bank" type="button">Puanı al (sağ tık)</button>
             </div>
             <div class="toast" id="toast" role="status" aria-live="polite"></div>
           </div>
@@ -96,7 +97,7 @@ demo: true
       <div class="wrap">
         <div class="section-head">
           <span class="eyebrow">bir seans · 30–90 saniye</span>
-          <h2>Isınan bir kedi, <span class="glow-word">tek bir karar</span></h2>
+          <h2>Isınan bir kedi, <span class="hl hl-sun">tek bir karar</span></h2>
           <p>Otur, dizine vurup kediyi çağır, sev. Kedi ısındıkça puan ve seri büyür. Asıl soru hep aynı: şimdi bırakmak mı, bir kez daha mı?</p>
         </div>
         <div class="chart-box">
@@ -151,7 +152,7 @@ demo: true
       <div class="wrap">
         <div class="section-head">
           <span class="eyebrow">beş kedi · beş ayrı sınır</span>
-          <h2>Her kedinin <span class="glow-word">kendi ısısı</span> var</h2>
+          <h2>Her kedinin <span class="hl hl-mint">kendi ısısı</span> var</h2>
           <p>Hepsi aynı elle sevilir ama hiçbiri aynı şeyi sevmez. Hangi bölgeyi, hangi hızı sevdiklerini deneyerek çözersin.</p>
         </div>
         <div class="cat-list">
@@ -201,10 +202,10 @@ demo: true
         <div class="bond">
           <h3>Sevgi 0'dan 100'e</h3>
           <div class="bond-track">
-            <div style="--c:#8f7fd0"><i></i><b>Yeni</b><span>0–33</span><p>Çağrına çoğu zaman gelmez.</p></div>
-            <div style="--c:#b3a4ee"><i></i><b>Tanıdık</b><span>34–66</span><p>Daha geç rahatsız olur.</p></div>
-            <div style="--c:#d9cffb"><i></i><b>Dost</b><span>67–99</span><p>Güvenle gelir. Pati yersen küser.</p></div>
-            <div style="--c:#ffc98b"><i></i><b>En İyi Dost</b><span>100 + sır</span><p>Gizli sevdiği şeyi bul.</p></div>
+            <div style="--c:#4ba3f2"><i></i><b>Yeni</b><span>0–33</span><p>Çağrına çoğu zaman gelmez.</p></div>
+            <div style="--c:#3cc8a4"><i></i><b>Tanıdık</b><span>34–66</span><p>Daha geç rahatsız olur.</p></div>
+            <div style="--c:#ff8a3d"><i></i><b>Dost</b><span>67–99</span><p>Güvenle gelir. Pati yersen küser.</p></div>
+            <div style="--c:#ffd23f"><i></i><b>En İyi Dost</b><span>100 + sır</span><p>Gizli sevdiği şeyi bul.</p></div>
           </div>
         </div>
       </div>

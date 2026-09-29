@@ -29,7 +29,7 @@ Görsel eklemek için dosyayı `assets/devlog/` altına koy ve yazıda `![Açık
 
 İki sayfa var:
 
-- `index.html` — **Oyun** sayfası: yalnız tanıtım (seans, dört dokunuş, kediler, sevgi, odadaki olaylar)
+- `index.html` — **Oyun** sayfası: yalnız logo, anahtar görsel ve genel bir tanıtım yazısı
 - `devlog/index.html` — **Devlog** sayfası: bütün yazıların listesi
 
 Diğer dosyalar:

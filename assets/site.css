@@ -146,9 +146,6 @@ p { margin: 0; }
 }
 .logo em { font-style: normal; color: var(--white); display: inline-block; }
 .pitch { font-size: clamp(21px, 2.3vw, 26px); font-weight: 700; line-height: 1.35; max-width: 30ch; }
-.hero-sub { color: var(--plum-soft); max-width: 46ch; }
-.cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; }
-.platform { font-size: 15px; color: var(--plum-soft); font-weight: 600; }
 
 .hero-art { margin: 0; position: relative; }
 .hero-art img {
@@ -158,166 +155,10 @@ p { margin: 0; }
   box-shadow: 10px 12px 0 var(--raspberry);
   transform: rotate(1.2deg);
 }
-.sticker {
-  position: absolute;
-  font: 400 20px/1 var(--display);
-  padding: 10px 16px; border-radius: 16px;
-  border: 3px solid var(--plum);
-  box-shadow: 0 4px 0 var(--plum);
-}
-.sticker-a { left: -18px; bottom: 18%; background: var(--lemon); transform: rotate(-8deg); }
-.sticker-b { right: -10px; top: -16px; background: var(--heart); color: var(--white); transform: rotate(7deg); }
 
-/* ---------- Seans ---------- */
-.session { padding: 88px 0; background: var(--cream); }
-.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.step {
-  position: relative;
-  padding: 30px 26px 26px;
-  border: 3px solid var(--plum);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  display: grid; gap: 10px; align-content: start;
-}
-.step h3 { font-family: var(--display); font-size: 28px; }
-.step p { color: var(--plum); }
-.step-1 { background: var(--tint-lilac); }
-.step-2 { background: var(--tint-lemon); }
-.step-3 { background: var(--tint-pink); }
-.step-no {
-  position: absolute; top: -20px; left: 22px;
-  width: 42px; height: 42px; display: grid; place-items: center;
-  font: 400 22px/1 var(--display);
-  border: 3px solid var(--plum); border-radius: 50%;
-  background: var(--white);
-}
-.step-1 .step-no { background: var(--lilac); color: var(--white); }
-.step-2 .step-no { background: var(--gold); }
-.step-3 .step-no { background: var(--raspberry); color: var(--white); }
-
-.hud-demo {
-  margin-top: 44px;
-  display: grid; grid-template-columns: minmax(0, 420px) 1fr; gap: 28px; align-items: center;
-  padding: 28px;
-  border-radius: 28px;
-  background: linear-gradient(135deg, var(--lavender), var(--night));
-  color: var(--white);
-}
-.hud-card {
-  background: var(--panel); color: var(--plum);
-  border: 3px solid var(--plum); border-radius: 20px;
-  padding: 20px 22px; display: grid; gap: 14px;
-  box-shadow: 0 6px 0 var(--plum);
-}
-.hud-row { display: grid; gap: 6px; }
-.hud-label { font-weight: 700; font-size: 16px; }
-.hud-label em { font-style: normal; color: var(--raspberry); font-size: 14px; }
-.bar { display: block; height: 14px; border-radius: 999px; background: color-mix(in srgb, var(--plum) 14%, transparent); overflow: hidden; }
-.fill { display: block; height: 100%; width: var(--v); border-radius: 999px; }
-.fill-joy { background: linear-gradient(90deg, var(--gold), var(--lemon-soft) 55%, var(--gold)); }
-.fill-calm { background: var(--coral); }
-.fill-love { background: var(--fuchsia); }
-.hud-note { display: grid; gap: 12px; }
-.hud-choice { font-size: 19px; font-weight: 700; }
-.hud-risk { color: var(--lemon-soft); font-weight: 600; }
-.hud-foot { color: color-mix(in srgb, var(--white) 80%, transparent); font-size: 16px; }
-.key {
-  display: inline-grid; place-items: center; min-width: 32px; height: 32px; margin-right: 6px;
-  background: var(--gold); color: var(--plum); border: 2px solid var(--plum); border-radius: 8px;
-  font: 400 18px/1 var(--display);
-}
-
-/* ---------- Dokunuşlar ---------- */
-.touch { padding: 88px 0; background: linear-gradient(180deg, var(--tint-pink), var(--cream)); }
-.touch-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
-.touch-card {
-  background: var(--white);
-  border: 3px solid var(--plum); border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 20px; display: grid; gap: 10px; align-content: start;
-}
-.touch-card svg { width: 100%; height: 92px; border-radius: 14px; }
-.touch-card h3 { font-family: var(--display); font-size: 26px; }
-.touch-card p { font-size: 16px; color: var(--plum-soft); }
-.t-stroke svg { background: var(--tint-lemon); }
-.t-knead svg { background: var(--tint-lilac); }
-.t-rub svg { background: var(--tint-mint); }
-.t-pat svg { background: var(--tint-peach); }
-.g-line { fill: none; stroke: var(--gold); stroke-width: 9; stroke-linecap: round; }
-.g-arrow { fill: none; stroke: var(--plum); stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
-.g-dot { fill: var(--white); stroke: var(--plum); stroke-width: 3; }
-.g-ring { fill: var(--white); stroke: var(--plum); stroke-width: 4; }
-.g-on { fill: var(--gold); }
-.g-halo { fill: none; stroke: var(--raspberry); stroke-width: 3; stroke-dasharray: 5 5; }
-.tempo-key { margin-top: 24px; color: var(--plum-soft); font-size: 16px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-.chip { font-weight: 700; padding: 6px 12px; border-radius: 999px; color: var(--white); font-size: 14px; }
-.chip-red { background: var(--heart); }
-.chip-blue { background: #749EFA; }
-
-/* ---------- Kediler ---------- */
-.cats-sec { padding: 88px 0; background: var(--cream); }
-.cat-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 18px; }
-.cat-card {
-  display: grid; grid-template-columns: 96px 1fr; gap: 6px 18px;
-  padding: 20px;
-  background: var(--white);
-  border: 3px solid var(--plum); border-radius: var(--radius);
-  box-shadow: 0 6px 0 var(--c);
-  outline: 0;
-}
-.face { width: 96px; height: 88px; grid-row: span 2; background: color-mix(in srgb, var(--c) 30%, white); border-radius: 20px; padding: 8px; }
-.cat-body h3 { font-family: var(--display); font-size: 28px; }
-.role { display: inline-block; margin: 4px 0 8px; font-size: 13px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; background: var(--c); padding: 4px 10px; border-radius: 999px; }
-.cat-body p { font-size: 16px; color: var(--plum-soft); }
-.traits { grid-column: 2; margin: 8px 0 0; display: grid; gap: 6px; font-size: 14px; }
-.traits div { display: flex; justify-content: space-between; gap: 10px; border-top: 2px dashed color-mix(in srgb, var(--plum) 15%, transparent); padding-top: 6px; }
-.traits dt { font-weight: 700; }
-.traits dd { margin: 0; color: var(--plum-soft); }
-.dots { display: flex; gap: 4px; align-items: center; }
-.dots i { width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--plum); background: var(--white); }
-.dots i.on { background: var(--c); }
-
-.bond {
-  margin-top: 44px; padding: 32px;
-  background: var(--tint-lilac);
-  border: 3px solid var(--plum); border-radius: 28px;
-  display: grid; gap: 10px;
-}
-.bond h3 { font-family: var(--display); font-size: 32px; }
-.bond > p { color: var(--plum-soft); }
-.bond-track { list-style: none; margin: 14px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; counter-reset: none; }
-.bond-track li {
-  background: var(--white); border: 3px solid var(--plum); border-radius: 18px;
-  padding: 16px; display: grid; gap: 4px; align-content: start;
-  border-top: 12px solid var(--c);
-}
-.bond-track b { font-family: var(--display); font-weight: 400; font-size: 22px; }
-.bond-track span { font-size: 13px; font-weight: 700; color: var(--raspberry); }
-.bond-track p { font-size: 15px; color: var(--plum-soft); }
-
-/* ---------- Oda ---------- */
-.room { padding: 88px 0; background: linear-gradient(180deg, var(--cream), var(--tint-lemon)); }
-.room-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-.room-card {
-  padding: 24px; border: 3px solid var(--plum); border-radius: var(--radius);
-  box-shadow: var(--shadow); display: grid; gap: 10px; align-content: start;
-}
-.room-card h3 { font-family: var(--display); font-size: 26px; }
-.room-card p { font-size: 16px; }
-.room-ico { width: 48px; height: 48px; padding: 8px; border-radius: 14px; border: 3px solid var(--plum); background: var(--white); }
-.rc-knock { background: var(--peach-soft); }
-.rc-knock .room-ico { fill: var(--saffron); }
-.rc-curtain { background: var(--pink-soft); }
-.rc-curtain .room-ico { fill: var(--heart); }
-.rc-wand { background: var(--tint-mint); }
-.rc-wand .room-ico { fill: var(--lavender); }
-
-/* ---------- Devlog'a çağrı ---------- */
-.cta-band { padding: 56px 0; background: var(--raspberry); color: var(--white); }
-.cta-inner { display: grid; grid-template-columns: auto 1fr auto; gap: 24px; align-items: center; }
-.cta-inner h2 { font-family: var(--display); font-size: clamp(28px, 3.6vw, 40px); }
-.cta-inner p { color: color-mix(in srgb, var(--white) 85%, transparent); }
-.cta-paw { width: 72px; height: 72px; fill: var(--gold); transform: rotate(-14deg); }
+/* ---------- Tanıtım yazısı ---------- */
+.about { padding: 56px 0 96px; background: var(--cream); }
+.about .prose { font-size: 21px; gap: 22px; }
 
 /* ---------- Devlog listesi ---------- */
 .log-head {
@@ -403,16 +244,10 @@ p { margin: 0; }
 @media (max-width: 960px) {
   .hero-grid { grid-template-columns: 1fr; gap: 36px; }
   .hero-art { max-width: 640px; }
-  .touch-grid { grid-template-columns: repeat(2, 1fr); }
-  .bond-track { grid-template-columns: repeat(2, 1fr); }
-  .hud-demo { grid-template-columns: 1fr; }
 }
 @media (max-width: 720px) {
-  .steps, .room-grid { grid-template-columns: 1fr; gap: 30px; }
-  .room-grid { gap: 18px; }
   .log-item a { grid-template-columns: 1fr; }
   .go { display: none; }
-  .cta-inner { grid-template-columns: 1fr; justify-items: start; }
   .post-nav { grid-template-columns: 1fr; }
   .post-nav .next { grid-column: 1; }
 }
@@ -421,15 +256,7 @@ p { margin: 0; }
   .brand { font-size: 20px; }
   .nav a { padding: 9px 13px; font-size: 15px; }
   .logo { -webkit-text-stroke-width: 7px; text-shadow: 0 5px 0 var(--plum); }
-  .touch-grid, .bond-track { grid-template-columns: 1fr; }
-  .cat-card { grid-template-columns: 72px 1fr; }
-  .face { width: 72px; height: 66px; }
-  .traits { grid-column: 1 / -1; }
-  .sticker { font-size: 16px; }
-  .sticker-a { left: -6px; }
-  .sticker-b { right: -4px; }
-  .hud-demo, .bond { padding: 20px; }
-  .session, .touch, .cats-sec, .room { padding: 64px 0; }
+  .about .prose { font-size: 19px; }
 }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }

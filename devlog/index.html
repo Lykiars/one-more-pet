@@ -21,7 +21,7 @@ description: One More Pet'in geliştirme günlüğü — prototipten tasarım ka
       <li class="log-item tone-{{ forloop.index | modulo: 4 }}">
         <a href="{{ post.url | relative_url }}">
           {%- if post.image %}
-          <span class="thumb"><img src="{{ post.image | relative_url }}" alt="" loading="lazy"></span>
+          <span class="thumb"><img src="{{ post.image | relative_url }}" alt="" loading="eager" decoding="async"></span>
           {%- else %}
           <span class="thumb thumb-empty" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M20 28c-4 0-7-4-7-8s3-8 7-8 7 4 7 8-3 8-7 8zm24 0c-4 0-7-4-7-8s3-8 7-8 7 4 7 8-3 8-7 8zM10 40c-3 0-6-3-6-7s3-6 6-6 6 3 6 6-3 7-6 7zm44 0c-3 0-6-3-6-7s3-6 6-6 6 3 6 6-3 7-6 7zM32 56c-9 0-16-4-16-10 0-7 8-14 16-14s16 7 16 14c0 6-7 10-16 10z"/></svg></span>
           {%- endif %}

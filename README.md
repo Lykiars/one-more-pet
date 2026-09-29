@@ -36,6 +36,6 @@ Diğer dosyalar:
 
 - `_layouts/` — sayfa ve yazı şablonları (gezinme `default.html` içinde)
 - `_includes/tarih.html` — Türkçe tarih biçimi
-- `assets/site.css` — stil; renkler oyunun paletinden (OneMorePet `Docs/GDD/19-sanat-yonu.md`)
+- `assets/site.css` — stil; renkler yalnız "One More Pet — Renk Paleti" kartındaki 16 renkten (`assets/devlog/renk-paleti.webp`, OneMorePet `Docs/GDD/19-sanat-yonu.md` "Kullanıcı paleti")
 - `assets/img/capsule.webp` — anahtar görsel (Steam kapsülü), `assets/devlog/` — yazı görselleri
 - `_config.yml` — site ayarları; repo adı değişirse `baseurl` güncellenmeli

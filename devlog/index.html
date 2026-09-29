@@ -1,0 +1,40 @@
+---
+layout: default
+title: Devlog
+description: One More Pet'in geliştirme günlüğü — prototipten tasarım kararlarına, oyunun nasıl şekillendiği.
+---
+<section class="log-head">
+  <div class="wrap">
+    <span class="eyebrow">geliştirme günlüğü</span>
+    <h1 class="page-title">Devlog</h1>
+    <p class="lede">One More Pet'in nasıl şekillendiğini buradan takip edebilirsin: denediklerimiz, vazgeçtiklerimiz ve oyunun bir sonraki hâli.</p>
+  </div>
+</section>
+
+<section class="log-list">
+  <div class="wrap">
+    {%- if site.posts.size == 0 %}
+    <p class="empty">Henüz devlog yok. İlk yazı yakında.</p>
+    {%- else %}
+    <ol class="log">
+      {%- for post in site.posts %}
+      <li class="log-item tone-{{ forloop.index | modulo: 4 }}">
+        <a href="{{ post.url | relative_url }}">
+          {%- if post.image %}
+          <span class="thumb"><img src="{{ post.image | relative_url }}" alt="" loading="lazy"></span>
+          {%- else %}
+          <span class="thumb thumb-empty" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M20 28c-4 0-7-4-7-8s3-8 7-8 7 4 7 8-3 8-7 8zm24 0c-4 0-7-4-7-8s3-8 7-8 7 4 7 8-3 8-7 8zM10 40c-3 0-6-3-6-7s3-6 6-6 6 3 6 6-3 7-6 7zm44 0c-3 0-6-3-6-7s3-6 6-6 6 3 6 6-3 7-6 7zM32 56c-9 0-16-4-16-10 0-7 8-14 16-14s16 7 16 14c0 6-7 10-16 10z"/></svg></span>
+          {%- endif %}
+          <span class="log-text">
+            <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{% include tarih.html date=post.date %}</time>
+            <strong>{{ post.title | escape }}</strong>
+            <span class="excerpt">{{ post.excerpt | strip_html | normalize_whitespace | truncate: 190 }}</span>
+          </span>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+      </li>
+      {%- endfor %}
+    </ol>
+    {%- endif %}
+  </div>
+</section>

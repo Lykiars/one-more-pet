@@ -1,237 +1,219 @@
 ---
 layout: default
-demo: true
+description: Kediyi sev, keyfini doldur ve “bir kez daha” demenin bedelini pati yemeden önce hesapla. Sıcak bir odada beş kediyle birinci şahıs sevme oyunu.
 ---
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <defs>
     <symbol id="cat" viewBox="0 0 120 110">
-      <path d="M16 56 L20 6 L54 32 Z" style="fill:var(--fur);stroke:#2b2150;stroke-width:4;stroke-linejoin:round"></path>
-      <path d="M66 32 L100 6 L104 56 Z" style="fill:var(--fur);stroke:#2b2150;stroke-width:4;stroke-linejoin:round"></path>
+      <path d="M16 56 L20 6 L54 32 Z" style="fill:var(--fur);stroke:#30135B;stroke-width:4;stroke-linejoin:round"></path>
+      <path d="M66 32 L100 6 L104 56 Z" style="fill:var(--fur);stroke:#30135B;stroke-width:4;stroke-linejoin:round"></path>
       <path d="M25 42 L27 20 L42 33 Z" style="fill:var(--ear)"></path>
       <path d="M78 33 L93 20 L95 42 Z" style="fill:var(--ear)"></path>
-      <ellipse cx="60" cy="64" rx="47" ry="40" style="fill:var(--fur);stroke:#2b2150;stroke-width:4"></ellipse>
+      <ellipse cx="60" cy="64" rx="47" ry="40" style="fill:var(--fur);stroke:#30135B;stroke-width:4"></ellipse>
       <path d="M60 25 C44 26 30 36 26 50 C38 52 50 46 60 36 Z" style="fill:var(--patch)"></path>
-      <ellipse cx="42" cy="62" rx="8" ry="10" style="fill:var(--eye);stroke:#2b2150;stroke-width:3"></ellipse>
-      <ellipse cx="78" cy="62" rx="8" ry="10" style="fill:var(--eye);stroke:#2b2150;stroke-width:3"></ellipse>
-      <ellipse cx="42" cy="63" rx="3" ry="6" style="fill:#2b2150"></ellipse>
-      <ellipse cx="78" cy="63" rx="3" ry="6" style="fill:#2b2150"></ellipse>
+      <ellipse cx="42" cy="62" rx="8" ry="10" style="fill:var(--eye);stroke:#30135B;stroke-width:3"></ellipse>
+      <ellipse cx="78" cy="62" rx="8" ry="10" style="fill:var(--eye);stroke:#30135B;stroke-width:3"></ellipse>
+      <ellipse cx="42" cy="63" rx="3" ry="6" style="fill:#30135B"></ellipse>
+      <ellipse cx="78" cy="63" rx="3" ry="6" style="fill:#30135B"></ellipse>
       <circle cx="44" cy="58" r="2.2" style="fill:#ffffff"></circle>
       <circle cx="80" cy="58" r="2.2" style="fill:#ffffff"></circle>
-      <ellipse cx="30" cy="80" rx="8" ry="4.5" style="fill:#f59ab9;opacity:0.7"></ellipse>
-      <ellipse cx="90" cy="80" rx="8" ry="4.5" style="fill:#f59ab9;opacity:0.7"></ellipse>
-      <path d="M54 76 L66 76 L60 83 Z" style="fill:#f07a9a;stroke:#2b2150;stroke-width:2.5;stroke-linejoin:round"></path>
-      <path d="M60 83 Q56 90 50 87 M60 83 Q64 90 70 87" style="fill:none;stroke:#2b2150;stroke-width:3;stroke-linecap:round"></path>
+      <ellipse cx="30" cy="80" rx="8" ry="4.5" style="fill:#ECB2C4;opacity:0.85"></ellipse>
+      <ellipse cx="90" cy="80" rx="8" ry="4.5" style="fill:#ECB2C4;opacity:0.85"></ellipse>
+      <path d="M54 76 L66 76 L60 83 Z" style="fill:#F38666;stroke:#30135B;stroke-width:2.5;stroke-linejoin:round"></path>
+      <path d="M60 83 Q56 90 50 87 M60 83 Q64 90 70 87" style="fill:none;stroke:#30135B;stroke-width:3;stroke-linecap:round"></path>
+    </symbol>
+    <symbol id="paw" viewBox="0 0 64 64">
+      <path d="M20 28c-4 0-7-4-7-8s3-8 7-8 7 4 7 8-3 8-7 8zm24 0c-4 0-7-4-7-8s3-8 7-8 7 4 7 8-3 8-7 8zM10 40c-3 0-6-3-6-7s3-6 6-6 6 3 6 6-3 7-6 7zm44 0c-3 0-6-3-6-7s3-6 6-6 6 3 6 6-3 7-6 7zM32 56c-9 0-16-4-16-10 0-7 8-14 16-14s16 7 16 14c0 6-7 10-16 10z"></path>
     </symbol>
   </defs>
 </svg>
 
-    <section class="hero" id="oyun">
-      <div class="wrap hero-grid">
-        <div>
-          <span class="status">ön üretim · prototip</span>
-          <h1 class="logo">One More <em>Pet</em></h1>
-          <p class="pitch">Kediyi sev, işaretlerini oku ve “bir kez daha” demenin bedelini pati yemeden önce hesapla.</p>
-          <p class="hero-sub">Küçük, sıcak bir oda ve beş kedi. Onları çağırıyor, kucağında seviyor ve sınırlarını öğreniyorsun. Her okşama puan getirir ama kedinin sabrı sonsuz değil.</p>
-          <div class="cta-row">
-            <a class="btn" href="#devlog">Devlog'u oku</a>
-            <a class="btn btn-soft" href="#seans">Bir seans nasıl geçer?</a>
-          </div>
-          <p class="platform">hedef: Windows · Steam</p>
-        </div>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="status">ön üretim · oynanabilir prototip</span>
+      <h1 class="logo">One More <em>Pet</em></h1>
+      <p class="pitch">Kediyi sev, keyfini doldur ve “bir kez daha” demenin bedelini pati yemeden önce hesapla.</p>
+      <p class="hero-sub">Gün batımında sıcak bir oda ve beş kedi. Koltuğuna otur, dizine vurup bir kediyi çağır, kucağında sev. Her kedinin sevdiği yer, sevdiği hız ve sabrı başka.</p>
+      <div class="cta-row">
+        <a class="btn" href="#seans">Bir seans nasıl geçer?</a>
+        <a class="btn btn-soft" href="{{ '/devlog/' | relative_url }}">Devlog'u oku</a>
+      </div>
+      <p class="platform">hedef: Windows · Steam · tek oyunculu</p>
+    </div>
+    <figure class="hero-art">
+      <img src="{{ '/assets/img/capsule.webp' | relative_url }}" width="1672" height="941" alt="Sarı koltukta oturan kıvırcık saçlı bir kadın; kucağındaki gri-beyaz kedi ona pati atıyor, yanında turuncu benekli bir kedi uyuyor. Sağ üstte One More Pet logosu.">
+      <span class="sticker sticker-a" aria-hidden="true">mrrr…</span>
+      <span class="sticker sticker-b" aria-hidden="true">pati!</span>
+    </figure>
+  </div>
+</section>
 
-        <div class="stage" id="petbox" aria-label="Sevme denemesi">
-          <div class="pool">
-            <i class="shape s1" aria-hidden="true"></i><i class="shape s2" aria-hidden="true"></i><i class="shape s3" aria-hidden="true"></i><i class="shape s4" aria-hidden="true"></i>
-            <div class="rug" aria-hidden="true"></div>
-            <div class="motes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
-            <svg class="pet-cat" id="pet-cat" viewBox="0 0 300 236" role="img" aria-label="Sevilmeyi bekleyen turuncu kedi. Üzerine basılı tutarak sevebilirsin.">
-              <g class="tail">
-                <path d="M226 186 C268 184 288 156 278 126 C272 108 254 106 252 122" style="fill:none;stroke:#2b2150;stroke-width:24;stroke-linecap:round"></path>
-                <path d="M226 186 C268 184 288 156 278 126 C272 108 254 106 252 122" style="fill:none;stroke:#f5a860;stroke-width:14;stroke-linecap:round"></path>
-              </g>
-              <ellipse cx="150" cy="176" rx="94" ry="54" style="fill:#f5a860;stroke:#2b2150;stroke-width:5"></ellipse>
-              <path d="M96 160 Q104 150 114 158 M196 158 Q204 150 212 160 M140 206 Q150 198 160 206" style="fill:none;stroke:#e0843a;stroke-width:6;stroke-linecap:round"></path>
-              <ellipse cx="118" cy="222" rx="20" ry="11" style="fill:#fbd2a6;stroke:#2b2150;stroke-width:4"></ellipse>
-              <ellipse cx="182" cy="222" rx="20" ry="11" style="fill:#fbd2a6;stroke:#2b2150;stroke-width:4"></ellipse>
-              <g class="ear ear-l" id="ear-l">
-                <path d="M90 90 L94 32 L136 64 Z" style="fill:#f5a860;stroke:#2b2150;stroke-width:5;stroke-linejoin:round"></path>
-                <path d="M101 78 L103 48 L124 64 Z" style="fill:#f7b8cc"></path>
-              </g>
-              <g class="ear ear-r" id="ear-r">
-                <path d="M164 64 L206 32 L210 90 Z" style="fill:#f5a860;stroke:#2b2150;stroke-width:5;stroke-linejoin:round"></path>
-                <path d="M176 64 L197 48 L199 78 Z" style="fill:#f7b8cc"></path>
-              </g>
-              <ellipse cx="150" cy="114" rx="72" ry="60" style="fill:#f5a860;stroke:#2b2150;stroke-width:5"></ellipse>
-              <path d="M150 56 C130 58 108 70 100 88 C118 92 138 82 150 68 Z" style="fill:#e0843a"></path>
-              <ellipse id="eye-l" cx="124" cy="114" rx="6" ry="9" style="fill:#2b2150"></ellipse>
-              <ellipse id="eye-r" cx="176" cy="114" rx="6" ry="9" style="fill:#2b2150"></ellipse>
-              <ellipse cx="104" cy="136" rx="11" ry="6" style="fill:#f59ab9;opacity:0.75"></ellipse>
-              <ellipse cx="196" cy="136" rx="11" ry="6" style="fill:#f59ab9;opacity:0.75"></ellipse>
-              <path d="M142 128 L158 128 L150 137 Z" style="fill:#f07a9a;stroke:#2b2150;stroke-width:3;stroke-linejoin:round"></path>
-              <path d="M150 137 Q144 146 135 142 M150 137 Q156 146 165 142" style="fill:none;stroke:#2b2150;stroke-width:3.5;stroke-linecap:round"></path>
-              <path d="M84 126 L112 130 M84 140 L112 138 M216 126 L188 130 M216 140 L188 138" style="fill:none;stroke:#2b2150;stroke-width:2.5;stroke-linecap:round;opacity:0.6"></path>
-            </svg>
-          </div>
-          <div class="hud">
-            <div class="hud-top">
-              <div class="mood" id="mood">Rahat</div>
-              <div class="mood-note" id="mood-note">Mırlıyor. Kedinin üstüne basılı tut ve sev.</div>
-            </div>
-            <div class="meter" role="meter" aria-label="Rahatsızlık" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="meter"><div class="meter-fill" id="meter-fill"></div></div>
-            <div class="stats">
-              <span>seans<b id="s-score">0</b></span>
-              <span>seri<b id="s-combo">x1.0</b></span>
-              <span>mırlama<b id="s-bank">0</b></span>
-            </div>
-            <div class="controls">
-              <button class="btn btn-pet" id="btn-pet" type="button" aria-pressed="false">Basılı tut ve sev</button>
-              <button class="btn btn-soft" id="btn-bank" type="button">Puanı al (sağ tık)</button>
-            </div>
-            <div class="toast" id="toast" role="status" aria-live="polite"></div>
-          </div>
+<section class="session" id="seans">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">bir seans · yarım dakika</span>
+      <h2>Keyfi doldur, sonra <span class="hl hl-gold">karar ver</span></h2>
+      <p>Kısa, tek bir soruya dayanan seanslar: kedi mutlu uyurken bırakmak mı, biraz daha puan için şansını zorlamak mı?</p>
+    </div>
+
+    <ol class="steps">
+      <li class="step step-1">
+        <span class="step-no">1</span>
+        <h3>Çağır</h3>
+        <p>Otur, bir kediye bak ve dizine vur. Kedi seni fark eder, yaklaşır ve kucağına atlar. Canı istemiyorsa neden gelmediğini görürsün.</p>
+      </li>
+      <li class="step step-2">
+        <span class="step-no">2</span>
+        <h3>Sev</h3>
+        <p>Kedinin üstünde kılavuzlar belirir. Sevdiği yerlerde ve doğru hızda sevdikçe <b>keyif</b> çubuğu dolar. Sevmediği yeri atlayabilirsin.</p>
+      </li>
+      <li class="step step-3">
+        <span class="step-no">3</span>
+        <h3>Uyut ya da bir kez daha</h3>
+        <p>Keyif dolunca kedi mırlayarak uyumaya hazırdır. Uyutursan en güzel sonuç senin. Devam edersen puan katlanır ama <b>sabır</b> hızla erir.</p>
+      </li>
+    </ol>
+
+    <div class="hud-demo" aria-label="Oyundaki seans çubuklarının örneği">
+      <div class="hud-card">
+        <div class="hud-row">
+          <span class="hud-label">Keyif <b>doldu!</b></span>
+          <span class="bar"><i class="fill fill-joy" style="--v:100%"></i></span>
+        </div>
+        <div class="hud-row">
+          <span class="hud-label">Sabır <em>bitince pati!</em></span>
+          <span class="bar"><i class="fill fill-calm" style="--v:34%"></i></span>
+        </div>
+        <div class="hud-row">
+          <span class="hud-label">Sevgi · <b>Tanıdık</b></span>
+          <span class="bar"><i class="fill fill-love" style="--v:58%"></i></span>
         </div>
       </div>
-    </section>
-
-    <section class="session" id="seans">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow">bir seans · 30–90 saniye</span>
-          <h2>Isınan bir kedi, <span class="hl hl-sun">tek bir karar</span></h2>
-          <p>Otur, dizine vurup kediyi çağır, sev. Kedi ısındıkça puan ve seri büyür. Asıl soru hep aynı: şimdi bırakmak mı, bir kez daha mı?</p>
-        </div>
-        <div class="chart-box">
-          <svg class="chart" viewBox="0 0 800 300" role="img" aria-label="Bir sevme seansında rahatsızlığın zamana göre değişimi: çağırma, sevme, bölge değiştirince kısa düşüş, 88'de puanı alma; devam edilirse 100'de pati.">
-            <rect class="band-0" x="60" y="174" width="720" height="86"></rect>
-            <rect class="band-1" x="60" y="119" width="720" height="55"></rect>
-            <rect class="band-2" x="60" y="75" width="720" height="44"></rect>
-            <rect class="band-3" x="60" y="42" width="720" height="33"></rect>
-            <rect class="band-4" x="60" y="38" width="720" height="4"></rect>
-            <line class="axis" x1="60" y1="260" x2="780" y2="260"></line>
-            <line class="axis" x1="60" y1="36" x2="60" y2="260"></line>
-            <text class="tick" x="50" y="264" text-anchor="end">0</text>
-            <text class="tick" x="50" y="176" text-anchor="end">40</text>
-            <text class="tick" x="50" y="121" text-anchor="end">65</text>
-            <text class="tick" x="50" y="77" text-anchor="end">85</text>
-            <text class="tick" x="50" y="44" text-anchor="end">100</text>
-            <text class="tick" x="60" y="282" text-anchor="middle">0 sn</text>
-            <text class="tick" x="260" y="282" text-anchor="middle">10</text>
-            <text class="tick" x="460" y="282" text-anchor="middle">20</text>
-            <text class="tick" x="660" y="282" text-anchor="middle">30</text>
-            <path class="curve" d="M60 260 L120 249 C150 244 170 240 180 238 C230 200 270 170 300 161 C315 158 325 170 340 172 C390 150 430 118 460 106 C495 92 520 76 540 66"></path>
-            <path class="risk" d="M540 66 C570 56 600 46 620 40 L640 40"></path>
-            <circle class="dot" cx="120" cy="249" r="8"></circle>
-            <text class="note" x="120" y="228" text-anchor="middle">Çağır</text>
-            <text class="note-soft" x="120" y="212" text-anchor="middle">dizine vur</text>
-            <circle class="dot" cx="300" cy="161" r="8"></circle>
-            <text class="note" x="286" y="140" text-anchor="end">Sev</text>
-            <text class="note-soft" x="286" y="124" text-anchor="end">seri büyür</text>
-            <circle class="dot" cx="340" cy="172" r="8"></circle>
-            <text class="note" x="350" y="200">Bölge değiştir</text>
-            <text class="note-soft" x="350" y="216">eski bölge soğur</text>
-            <circle class="dot dot-lamp" cx="540" cy="66" r="10"></circle>
-            <text class="note" x="526" y="100" text-anchor="end">Bırak: Tam Zamanında</text>
-            <text class="note-soft" x="526" y="116" text-anchor="end">70–99 arasında çıkarsan +%15</text>
-            <circle class="dot-hot" cx="640" cy="40" r="10"></circle>
-            <text class="note-hot" x="656" y="45">Pati!</text>
-            <text class="note-soft" x="656" y="62">seans puanının %75'i gider</text>
-            <text class="note-soft" x="590" y="30" text-anchor="middle">bir kez daha…</text>
-          </svg>
-        </div>
-        <div class="legend">
-          <span style="--c:#7fd9b8"><i></i>Rahat · mırlar</span>
-          <span style="--c:#d9e57a"><i></i>Doyuyor · kuyruk ucu</span>
-          <span style="--c:#ffc857"><i></i>Rahatsız · kulaklar geride</span>
-          <span style="--c:#ff9b6a"><i></i>Son uyarı · tıslama</span>
-          <span style="--c:#f25c7a"><i></i>Pati</span>
-        </div>
+      <div class="hud-note">
+        <p class="hud-choice"><span class="key">E</span> uyut · en iyi sonuç</p>
+        <p class="hud-choice hud-risk">devam et · puan <b>x2,0</b>, ama pati gelirse puanın <b>%75</b>'i ve biraz sevgi gider</p>
+        <p class="hud-foot">Kaybedeceğin şey her zaman ekranda yazar. Risk görünür, karar senin.</p>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="cats-sec" id="kediler">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow">beş kedi · beş ayrı sınır</span>
-          <h2>Her kedinin <span class="hl hl-mint">kendi ısısı</span> var</h2>
-          <p>Hepsi aynı elle sevilir ama hiçbiri aynı şeyi sevmez. Hangi bölgeyi, hangi hızı sevdiklerini deneyerek çözersin.</p>
-        </div>
-        <div class="cat-list">
-          <article class="cat-row" style="--c:#7fd9b8">
-            <svg class="face" style="--fur:#f5a860;--patch:#e0843a;--ear:#f7b8cc;--eye:#8fd16f" aria-hidden="true"><use href="#cat"></use></svg>
-            <div><h3>Misket</h3><span class="role">ilk dostun</span><p>Başını, çenesini ve sırtını sever. Hatalara en sabırlı kedi; oyunu onunla öğrenirsin.</p></div>
-            <div class="traits">
-              <div class="trait"><span>Sabır</span><span class="dots" aria-label="5 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
-              <div class="trait"><span>El hızı</span><span class="val">orta · geniş aralık</span></div>
-            </div>
-          </article>
-          <article class="cat-row" style="--c:#d9e57a">
-            <svg class="face" style="--fur:#fff6ee;--patch:#fff6ee;--ear:#f7b2c8;--eye:#7cc3ee" aria-hidden="true"><use href="#cat"></use></svg>
-            <div><h3>Prenses</h3><span class="role">koltuğun sahibi</span><p>Yalnız başına ve çenesine dokundurur. Acele eden eli hemen fark eder.</p></div>
-            <div class="traits">
-              <div class="trait"><span>Sabır</span><span class="dots" aria-label="3 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></div>
-              <div class="trait"><span>El hızı</span><span class="val">yavaş · dar aralık</span></div>
-            </div>
-          </article>
-          <article class="cat-row" style="--c:#ffc857">
-            <svg class="face" style="--fur:#fff1dc;--patch:#d98b4b;--ear:#f7b8cc;--eye:#f2c14e" aria-hidden="true"><use href="#cat"></use></svg>
-            <div><h3>Lokum</h3><span class="role">karnını bile sevdirir</span><p>Sevdiği çok yer var ama çabuk ısınır. Bölge değiştirmeyi bilen kazanır.</p></div>
-            <div class="traits">
-              <div class="trait"><span>Sabır</span><span class="dots" aria-label="1 / 5"><i class="on"></i><i></i><i></i><i></i><i></i></span></div>
-              <div class="trait"><span>El hızı</span><span class="val">orta · geniş aralık</span></div>
-            </div>
-          </article>
-          <article class="cat-row" style="--c:#ff9b6a">
-            <svg class="face" style="--fur:#aab6c4;--patch:#7f8b9b;--ear:#f7b8cc;--eye:#f7e64a" aria-hidden="true"><use href="#cat"></use></svg>
-            <div><h3>Zıpır</h3><span class="role">enerji topu</span><p>Sırtını ve kuyruğunu sever. Hızlı ve kararlı bir el ister; yavaş kalırsan sıkılır.</p></div>
-            <div class="traits">
-              <div class="trait"><span>Sabır</span><span class="dots" aria-label="3 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></div>
-              <div class="trait"><span>El hızı</span><span class="val">hızlı · dar aralık</span></div>
-            </div>
-          </article>
-          <article class="cat-row" style="--c:#f25c7a">
-            <svg class="face" style="--fur:#3a3046;--patch:#3a3046;--ear:#6a5a7e;--eye:#f7e64a" aria-hidden="true"><use href="#cat"></use></svg>
-            <div><h3>Gölge</h3><span class="role">masanın altından izler</span><p>En zor güvenilen kedi. Çok yavaş sevilmek ister; güveni en son gelir, ama gelir.</p></div>
-            <div class="traits">
-              <div class="trait"><span>Sabır</span><span class="dots" aria-label="1 / 5"><i class="on"></i><i></i><i></i><i></i><i></i></span></div>
-              <div class="trait"><span>El hızı</span><span class="val">çok yavaş · dar aralık</span></div>
-            </div>
-          </article>
-        </div>
-        <p class="cat-key">Kartların rengi, oyundaki rahatsızlık ölçeğinden geliyor: nane en rahat kedi, gül kırmızısı en zoru.</p>
+<section class="touch" id="dokunuslar">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">dört dokunuş</span>
+      <h2>Masajdan esinli, <span class="hl hl-pink">basit hareketler</span></h2>
+      <p>El kendiliğinden hareket eder. Sen yalnız kılavuzu izlersin. Kılavuzun yeri, yönü ve sırası her seferinde değişir.</p>
+    </div>
+    <div class="touch-grid">
+      <article class="touch-card t-stroke">
+        <svg viewBox="0 0 96 64" aria-hidden="true"><path d="M10 46 C28 12 58 10 84 26" class="g-line"/><path d="M74 16 L86 26 L72 32" class="g-arrow"/><circle cx="46" cy="21" r="6" class="g-dot"/></svg>
+        <h3>Okşa</h3>
+        <p>Kürk yönünde kıvrılan çizgiyi, üstünde kayan parlak noktanın hızında izle.</p>
+      </article>
+      <article class="touch-card t-knead">
+        <svg viewBox="0 0 96 64" aria-hidden="true"><circle cx="30" cy="32" r="14" class="g-ring"/><circle cx="66" cy="32" r="14" class="g-ring g-on"/><circle cx="66" cy="32" r="22" class="g-halo"/></svg>
+        <h3>Yoğur</h3>
+        <p>İki başparmak iki yuvarlağa oturur. Sırayla sol ve sağ tıkla, halka kapanınca bas.</p>
+      </article>
+      <article class="touch-card t-rub">
+        <svg viewBox="0 0 96 64" aria-hidden="true"><circle cx="48" cy="32" r="20" class="g-line"/><path d="M62 12 L70 19 L60 22" class="g-arrow"/><circle cx="30" cy="22" r="5" class="g-dot"/></svg>
+        <h3>Ov</h3>
+        <p>Daireyi ok yönünde bir tur çevir. Hızın doğruysa kılavuz sarı kalır.</p>
+      </article>
+      <article class="touch-card t-pat">
+        <svg viewBox="0 0 96 64" aria-hidden="true"><circle cx="22" cy="40" r="7" class="g-ring"/><circle cx="48" cy="32" r="7" class="g-ring g-on"/><circle cx="48" cy="32" r="14" class="g-halo"/><circle cx="74" cy="24" r="7" class="g-ring"/></svg>
+        <h3>Pıtpıt</h3>
+        <p>Parlayan noktaya ritimle tıkla. Avuç hafifçe iner, kedi mırlar.</p>
+      </article>
+    </div>
+    <p class="tempo-key"><span class="chip chip-red">Yavaşla</span> <span class="chip chip-blue">Biraz hızlan</span> Elin çok hızlıysa kılavuz kızarır, yavaşsa maviye döner. Doğru hızı kedi mırlayarak söyler.</p>
+  </div>
+</section>
 
-        <div class="bond">
-          <h3>Sevgi 0'dan 100'e</h3>
-          <div class="bond-track">
-            <div style="--c:#4ba3f2"><i></i><b>Yeni</b><span>0–33</span><p>Çağrına çoğu zaman gelmez.</p></div>
-            <div style="--c:#3cc8a4"><i></i><b>Tanıdık</b><span>34–66</span><p>Daha geç rahatsız olur.</p></div>
-            <div style="--c:#ff8a3d"><i></i><b>Dost</b><span>67–99</span><p>Güvenle gelir. Pati yersen küser.</p></div>
-            <div style="--c:#ffd23f"><i></i><b>En İyi Dost</b><span>100 + sır</span><p>Gizli sevdiği şeyi bul.</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
+<section class="cats-sec" id="kediler">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">beş kedi · beş ayrı sınır</span>
+      <h2>Her kedinin <span class="hl hl-mint">kendi huyu</span> var</h2>
+      <p>Hepsi aynı elle sevilir ama hiçbiri aynı şeyi sevmez. Sevdiği bölgeler kedinin üstünde renkle görünür: yeşil sever, sarı idare eder, turuncu pek sevmez, kırmızıya dokunma.</p>
+    </div>
+    <div class="cat-list">
+      <article class="cat-card" style="--c:#7FD6B5">
+        <svg class="face" style="--fur:#B9B6CC;--patch:#8E89A8;--ear:#ECB2C4;--eye:#9BD36F" aria-hidden="true"><use href="#cat"></use></svg>
+        <div class="cat-body"><h3>Misket</h3><span class="role">ilk dostun</span><p>Başını, çenesini ve sırtını sever. Hatalara en sabırlı kedi; oyunu onunla öğrenirsin.</p></div>
+        <dl class="traits"><div><dt>Sabır</dt><dd class="dots" aria-label="5 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></dd></div><div><dt>El hızı</dt><dd>orta · geniş aralık</dd></div></dl>
+      </article>
+      <article class="cat-card" style="--c:#FDD861">
+        <svg class="face" style="--fur:#FBF0F1;--patch:#FBF0F1;--ear:#ECB2C4;--eye:#8FB8F0" aria-hidden="true"><use href="#cat"></use></svg>
+        <div class="cat-body"><h3>Prenses</h3><span class="role">koltuğun sahibi</span><p>Yalnız başına ve çenesine dokundurur. Acele eden eli hemen fark eder.</p></div>
+        <dl class="traits"><div><dt>Sabır</dt><dd class="dots" aria-label="3 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></dd></div><div><dt>El hızı</dt><dd>yavaş · dar aralık</dd></div></dl>
+      </article>
+      <article class="cat-card" style="--c:#FEBA4A">
+        <svg class="face" style="--fur:#E69319;--patch:#C1653E;--ear:#ECB2C4;--eye:#9BD36F" aria-hidden="true"><use href="#cat"></use></svg>
+        <div class="cat-body"><h3>Lokum</h3><span class="role">karnını bile sevdirir</span><p>Sevdiği çok yer var ama çabuk ısınır. Bölge değiştirmeyi bilen kazanır.</p></div>
+        <dl class="traits"><div><dt>Sabır</dt><dd class="dots" aria-label="1 / 5"><i class="on"></i><i></i><i></i><i></i><i></i></dd></div><div><dt>El hızı</dt><dd>orta · geniş aralık</dd></div></dl>
+      </article>
+      <article class="cat-card" style="--c:#F38666">
+        <svg class="face" style="--fur:#F9DABF;--patch:#974743;--ear:#ECB2C4;--eye:#FDD861" aria-hidden="true"><use href="#cat"></use></svg>
+        <div class="cat-body"><h3>Zıpır</h3><span class="role">enerji topu</span><p>Sırtını ve kuyruğunu sever. Hızlı ve kararlı bir el ister; yavaş kalırsan sıkılır.</p></div>
+        <dl class="traits"><div><dt>Sabır</dt><dd class="dots" aria-label="3 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></dd></div><div><dt>El hızı</dt><dd>hızlı · dar aralık</dd></div></dl>
+      </article>
+      <article class="cat-card" style="--c:#C74A7C">
+        <svg class="face" style="--fur:#432C62;--patch:#432C62;--ear:#76536B;--eye:#FDD861" aria-hidden="true"><use href="#cat"></use></svg>
+        <div class="cat-body"><h3>Gölge</h3><span class="role">masanın altından izler</span><p>En zor güvenilen kedi. Çok yavaş sevilmek ister; güveni en son gelir, ama gelir.</p></div>
+        <dl class="traits"><div><dt>Sabır</dt><dd class="dots" aria-label="1 / 5"><i class="on"></i><i></i><i></i><i></i><i></i></dd></div><div><dt>El hızı</dt><dd>çok yavaş · dar aralık</dd></div></dl>
+      </article>
+    </div>
 
-    <section class="devlog" id="devlog">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow">geliştirme günlüğü</span>
-          <h2>Devlog</h2>
-          <p>Oyunun nasıl şekillendiğini buradan takip edebilirsin.</p>
-        </div>
-        {%- if site.posts.size == 0 %}
-        <p class="empty">Henüz devlog yok. İlk yazı yakında.</p>
-        {%- else %}
-        <ol class="log">
-          {%- for post in site.posts %}
-          <li>
-            <a href="{{ post.url | relative_url }}">
-              <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{% include tarih.html date=post.date %}</time>
-              <div><h3>{{ post.title | escape }}</h3><div class="excerpt">{{ post.excerpt }}</div></div>
-              <span class="go" aria-hidden="true">→</span>
-            </a>
-          </li>
-          {%- endfor %}
-        </ol>
-        {%- endif %}
-      </div>
-    </section>
+    <div class="bond">
+      <h3>Sevgi 0'dan 100'e</h3>
+      <p>Her güzel seans kediyle aranı biraz daha ısıtır. Sevgi arttıkça kedi daha kolay gelir, daha uzun kalır.</p>
+      <ol class="bond-track">
+        <li style="--c:#AB83EB"><b>Yeni</b><span>0–33</span><p>Seni tanımıyor. Kısa sever, çabuk sıkılır.</p></li>
+        <li style="--c:#7FD6B5"><b>Tanıdık</b><span>34–66</span><p>Daha sabırlı, daha geç ısınır.</p></li>
+        <li style="--c:#FEBA4A"><b>Dost</b><span>67–99</span><p>Çağırınca hemen gelir, kucağında uzun kalır.</p></li>
+        <li style="--c:#F2545B"><b>En İyi Dost</b><span>100 + sır</span><p>Her kedinin gizli sevdiği bir şey var. Bulan bilir.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="room" id="oda">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">oda da yaşıyor</span>
+      <h2>Kediler seni <span class="hl hl-lilac">beklemez</span></h2>
+      <p>Sen kucağında birini severken ötekiler kendi işine bakar. Odanın içinde küçük olaylar kendiliğinden olur.</p>
+    </div>
+    <div class="room-grid">
+      <article class="room-card rc-knock">
+        <svg class="room-ico" aria-hidden="true"><use href="#paw"></use></svg>
+        <h3>Yaramazlık</h3>
+        <p>Kedi dolabın üstüne çıkar, bir eşyayı patisiyle aşağı iter ve sana bakar. Kaldırıp yerine koyabilirsin; bazen inatla bir kez daha düşürür.</p>
+      </article>
+      <article class="room-card rc-curtain">
+        <svg class="room-ico" aria-hidden="true"><use href="#paw"></use></svg>
+        <h3>Perdeye takılan pati</h3>
+        <p>Perdeyi tırmalarken tırnağı takılan kedi miyavlayıp yardım ister. Yanına git, kurtar; kalpler uçuşur.</p>
+      </article>
+      <article class="room-card rc-wand">
+        <svg class="room-ico" aria-hidden="true"><use href="#paw"></use></svg>
+        <h3>Kedi oltası</h3>
+        <p>Tüyü yerde sürüt, kedi çömelsin, kıçını sallasın ve atılsın. Son anda çekersen ıskalar ve bir sonraki yakalayış daha değerli olur.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap cta-inner">
+    <svg class="cta-paw" aria-hidden="true"><use href="#paw"></use></svg>
+    <div>
+      <h2>Oyun nasıl şekilleniyor?</h2>
+      <p>Prototipten tasarım kararlarına, her adımı devlogda yazıyoruz.</p>
+    </div>
+    <a class="btn" href="{{ '/devlog/' | relative_url }}">Devlog'a git →</a>
+  </div>
+</section>

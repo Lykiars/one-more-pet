@@ -3,32 +3,35 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#fffbf5">
-{%- if page.title and page.layout == "post" %}
+<meta name="theme-color" content="#FBF0F1">
+{%- if page.title %}
 <title>{{ page.title | escape }} · {{ site.title }}</title>
 {%- else %}
 <title>{{ site.title }}</title>
 {%- endif %}
-{%- assign aciklama = page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 %}
+{%- assign aciklama = page.excerpt | default: page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 %}
+{%- assign kapak = page.image | default: '/assets/img/capsule.webp' %}
 <meta name="description" content="{{ aciklama | escape }}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
 <meta property="og:description" content="{{ aciklama | escape }}">
 <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ kapak | absolute_url }}">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tilt+Warp&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&family=JetBrains+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tilt+Warp&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&display=swap">
 <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
 </head>
-<body>
+{%- if page.layout == "post" or page.url contains "/devlog/" %}{% assign bolum = "devlog" %}{% else %}{% assign bolum = "oyun" %}{% endif %}
+<body class="page-{{ bolum }}">
   <header class="topbar">
     <div class="wrap">
-      <a class="brand" href="{{ '/' | relative_url }}">One More <span>Pet</span></a>
-      <nav class="nav" aria-label="Bölümler">
-        <a href="{{ '/' | relative_url }}#oyun">Oyun</a>
-        <a href="{{ '/' | relative_url }}#kediler">Kediler</a>
-        <a href="{{ '/' | relative_url }}#devlog">Devlog</a>
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="One More Pet ana sayfa">One More <span>Pet</span></a>
+      <nav class="nav" aria-label="Sayfalar">
+        <a href="{{ '/' | relative_url }}"{% if bolum == "oyun" %} aria-current="page"{% endif %}>Oyun</a>
+        <a href="{{ '/devlog/' | relative_url }}"{% if bolum == "devlog" %} aria-current="page"{% endif %}>Devlog</a>
       </nav>
     </div>
   </header>
@@ -37,14 +40,11 @@
 {{ content }}
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="wrap">
       <span class="brand">One More <span>Pet</span></span>
       <span>Tek oyunculu PC oyunu · geliştirme sürüyor, bilgiler değişebilir.</span>
     </div>
   </footer>
-{%- if page.demo %}
-  <script src="{{ '/assets/demo.js' | relative_url }}"></script>
-{%- endif %}
 </body>
 </html>

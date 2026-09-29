@@ -2,12 +2,22 @@
 layout: default
 ---
 <article class="article">
-  <div class="wrap">
-    <a class="back" href="{{ '/' | relative_url }}#devlog">← Tüm devloglar</a>
-    <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{% include tarih.html date=page.date %}</time>
+  <div class="wrap wrap-narrow">
+    <a class="back" href="{{ '/devlog/' | relative_url }}">← Tüm devloglar</a>
+    <time class="post-date" datetime="{{ page.date | date: '%Y-%m-%d' }}">{% include tarih.html date=page.date %}</time>
     <h1>{{ page.title | escape }}</h1>
+    {%- if page.image %}
+    <figure class="cover">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | escape }}" loading="eager">
+      {%- if page.image_caption %}<figcaption>{{ page.image_caption }}</figcaption>{% endif %}
+    </figure>
+    {%- endif %}
     <div class="prose">
 {{ content }}
     </div>
+    <nav class="post-nav" aria-label="Diğer yazılar">
+      {%- if page.previous %}<a class="prev" href="{{ page.previous.url | relative_url }}"><span>← Önceki</span>{{ page.previous.title | escape }}</a>{% else %}<span></span>{% endif %}
+      {%- if page.next %}<a class="next" href="{{ page.next.url | relative_url }}"><span>Sonraki →</span>{{ page.next.title | escape }}</a>{% endif %}
+    </nav>
   </div>
 </article>

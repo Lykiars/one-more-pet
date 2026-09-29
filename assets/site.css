@@ -52,6 +52,7 @@
 [hidden] { display: none !important; }
 img { max-width: 100%; height: auto; display: block; }
 html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 76px; }
 body {
   margin: 0;
   background: var(--cream);
@@ -213,10 +214,9 @@ p { margin: 0; }
 .hud-label em { font-style: normal; color: var(--raspberry); font-size: 14px; }
 .bar { display: block; height: 14px; border-radius: 999px; background: color-mix(in srgb, var(--plum) 14%, transparent); overflow: hidden; }
 .fill { display: block; height: 100%; width: var(--v); border-radius: 999px; }
-.fill-joy { background: linear-gradient(90deg, var(--gold), var(--lemon-soft), var(--gold)); background-size: 200% 100%; animation: shimmer 2.4s linear infinite; }
+.fill-joy { background: linear-gradient(90deg, var(--gold), var(--lemon-soft) 55%, var(--gold)); }
 .fill-calm { background: var(--coral); }
 .fill-love { background: var(--fuchsia); }
-@keyframes shimmer { to { background-position: -200% 0; } }
 .hud-note { display: grid; gap: 12px; }
 .hud-choice { font-size: 19px; font-weight: 700; }
 .hud-risk { color: var(--lemon-soft); font-weight: 600; }

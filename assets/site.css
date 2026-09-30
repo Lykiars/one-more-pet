@@ -135,6 +135,15 @@ p { margin: 0; }
 }
 .logo em { font-style: normal; color: var(--offwhite); display: inline-block; }
 .pitch { font-size: clamp(21px, 2.3vw, 26px); font-weight: 700; line-height: 1.35; max-width: 30ch; }
+/* Oyunun türünü gösteren etiketler (Steam etiket adlarıyla). */
+.tags { display: grid; gap: 8px; }
+.tags-label { font: 700 13px/1 var(--body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.tag-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.tag-list li {
+  font: 700 15px/1 var(--body); color: var(--plum);
+  background: var(--tint-lilac); border: 2px solid var(--plum); border-radius: 10px;
+  padding: 7px 11px;
+}
 
 .hero-art { margin: 0; position: relative; }
 .hero-art img {

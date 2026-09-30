@@ -144,7 +144,7 @@ p { margin: 0; }
   box-shadow: 10px 12px 0 var(--fuchsia);
   transform: rotate(1.2deg);
 }
-/* Görselin sol alt köşesindeki mırlama etiketi. */
+/* Görselin köşelerindeki etiketler: sol altta mırlama, sağ üstte pati. */
 .sticker {
   position: absolute;
   font: 400 20px/1 var(--display);
@@ -153,6 +153,7 @@ p { margin: 0; }
   box-shadow: 0 4px 0 var(--plum);
 }
 .sticker-a { left: -18px; bottom: 18%; background: var(--light); color: var(--plum); transform: rotate(-8deg); }
+.sticker-b { right: -10px; top: -16px; background: var(--fuchsia); color: var(--offwhite); transform: rotate(7deg); }
 
 /* ---------- Tanıtım yazısı ---------- */
 .about { padding: 56px 0 96px; background: var(--bg); }
@@ -257,6 +258,7 @@ p { margin: 0; }
   .about .prose { font-size: 19px; }
   .sticker { font-size: 16px; }
   .sticker-a { left: -6px; }
+  .sticker-b { right: -4px; }
 }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
